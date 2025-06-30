@@ -1,17 +1,18 @@
 'use client';
+
 import { useState } from 'react';
 
 const weekdays = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
 
 const scheduleDataA = [
-   {
+ {
       location: 'Pyramid Kids Zone, Vasai (W)',
       days: { friday: '6:00PM - 7:30PM', saturday: '6:00PM - 7:30PM' },
       instructor: 'Senpei. Tanmay Nair',
     },
     {
       location: 'B.K.S English School, Vasai (W)',
-      days: { monday: '7:00PM - 8:3PAM', wednesday: '7:00PM - 8:30PM' },
+      days: { monday: '7:00PM - 8:30PAM', wednesday: '7:00PM - 8:30PM' },
       instructor: 'Senpei Alphonse Thomas',
     },
     {
@@ -37,7 +38,7 @@ const scheduleDataA = [
     {
       location: 'Shankar Mandir Umelman, Vasai (W)',
       days: { saturday: '5:30PM - 7:00PM', sunday: '5:30PM - 7:00PM' },
-      instructor: 'Senpai Arjun Tharu',
+      instructor: 'Sensei Arjun Tharu',
     },
     {
       location: 'Sai Gagangiri Ganeshmandir Compound Umela Naigaon (W)',
@@ -52,7 +53,7 @@ const scheduleDataA = [
   {
       location: 'MSB school, Vasai (W)',
       days: { saturday: '3:30PM - 5:00PM', sunday: '9:30AM - 11:00AM' },
-      instructor: 'Senpei Namrata Nair',
+      instructor: 'Sensei Namrata Nair',
  },
   {
       location: 'Nazareth Secondary school, Vasai (W)',
@@ -67,10 +68,10 @@ const scheduleDataA = [
       Senpei Bhavik Avaghade</>
  },
 
-
 ];
+
 const scheduleDataB = [
-   {
+  {
       location: 'BKS school, Vasai (W)',
       days: { monday: '7:00PM - 8:30PM',  wednesday: '7:00AM - 8:30AM' },
       instructor: 'Dr.Biju Nair',
@@ -85,10 +86,10 @@ const scheduleDataB = [
       days: { friday: '6:30PM - 8:00PM', saturday: '6:30PM - 8:00PM' },
       instructor: 'Dr.Biju Nair',
  },
-
 ];
+
 const scheduleDataC = [
-   {
+{
       location: 'Thakur Bhagwanidevi Musafir Public school, Naigoan (E)',
       days: { saturday: '5:00PM - 6:30PM', sunday: '5:00AM - 5:30AM' },
       instructor: 'Sensei Vikas Tiwari',
@@ -113,22 +114,16 @@ function ScheduleTable({ programTitle, scheduleData }) {
     selectedDay === 'all' ? true : Object.keys(row.days).includes(selectedDay)
   );
 
-
   return (
     <section className="py-16 bg-white border-t border-gray-200" id={`${programTitle.toLowerCase()}-schedule`}>
       <div className="container mx-auto px-4">
-        {/* Program Title */}
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-gray-800 uppercase">
-            {programTitle === 'Karate'}
-            {programTitle === 'Kickboxing'}
-            {programTitle === 'Rifle'}
             {programTitle} <span className="text-red-600">Schedule</span>
           </h2>
           <p className="text-gray-600 mt-2">Filter schedule by day using the buttons below.</p>
         </div>
 
-        {/* Day Filter */}
         <div className="flex flex-wrap justify-center gap-2 mb-6">
           {['all', ...weekdays].map((day) => (
             <button
@@ -145,7 +140,6 @@ function ScheduleTable({ programTitle, scheduleData }) {
           ))}
         </div>
 
-        {/* Schedule Table */}
         {filteredSchedule.length === 0 ? (
           <div className="text-center text-gray-500">No classes scheduled for this day.</div>
         ) : (
@@ -167,16 +161,18 @@ function ScheduleTable({ programTitle, scheduleData }) {
 
                   return (
                     <tr key={idx} className="border-t border-gray-100 hover:bg-gray-50">
-                      <td className="p-4 font-semibold text-gray-800">{row.location}</td>
-                      <td className="p-4 space-y-1">
+                      <td className="p-4 font-semibold text-gray-800 min-w-[180px]">{row.location}</td>
+                      <td className="p-4 space-y-1 min-w-[160px]">
                         {timingsToShow.map(([day, time]) => (
                           <div key={day}>
-                            <span className="capitalize font-medium">{day}:</span>{' '}
+                            <span className="capitalize font-semibold text-gray-800">
+  {day}:
+</span>{''}
                             <span className="text-gray-700">{time}</span>
                           </div>
                         ))}
                       </td>
-                      <td className="p-4 text-gray-700">{row.instructor}</td>
+                      <td className="p-4 text-gray-700 min-w-[160px]">{row.instructor}</td>
                     </tr>
                   );
                 })}
@@ -192,8 +188,7 @@ function ScheduleTable({ programTitle, scheduleData }) {
 export default function SchedulePage() {
   return (
     <div className="bg-gray-50">
-      {/* Header only once */}
-      <header className="py-20 text-center bg-white border-b border-gray-200">
+      <header className="py-20 text-center bg-white border-b border-gray-200 px-4">
         <h1 className="text-5xl font-bold text-gray-800">
           Classes <span className="text-red-600">Schedule</span>
         </h1>
@@ -202,19 +197,17 @@ export default function SchedulePage() {
         </p>
       </header>
 
-      {/* Schedule Tables */}
-   <div id="Karate-schedule">
-  <ScheduleTable programTitle="Karate" scheduleData={scheduleDataA} />
-</div>
+      <div id="Karate-schedule">
+        <ScheduleTable programTitle="Karate" scheduleData={scheduleDataA} />
+      </div>
 
-<div id="Rifle-schedule">
-  <ScheduleTable programTitle="Rifle" scheduleData={scheduleDataB} />
-</div>
+      <div id="Rifle-schedule">
+        <ScheduleTable programTitle="Rifle" scheduleData={scheduleDataB} />
+      </div>
 
-<div id="KickBoxing-schedule">
-  <ScheduleTable programTitle="KickBoxing" scheduleData={scheduleDataC} />
-</div>
+      <div id="KickBoxing-schedule">
+        <ScheduleTable programTitle="KickBoxing" scheduleData={scheduleDataC} />
+      </div>
     </div>
   );
 }
-
