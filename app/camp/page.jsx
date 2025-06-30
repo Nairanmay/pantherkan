@@ -8,7 +8,7 @@ const campData = [
     year: '2018',
     title: 'Black Pantherkan Winter Camp',
     images: [
-      '/camp/winter2018/img7.jpg',
+      '/camp/winter2018/img7.JPG',
        '/camp/winter2018/img1.jpg',
       '/camp/winter2018/img2.jpg',
       '/camp/winter2018/img3.jpg',
