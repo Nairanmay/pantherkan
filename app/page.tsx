@@ -3,14 +3,25 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { useEffect, useState } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+
+const images = ['/img1.jpg', '/bg2.webp', '/bg3.webp', '/bg4.webp'];
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [managementOpen, setManagementOpen] = useState(false);
   const [galleryOpen, setGalleryOpen] = useState(false);
+  const [index, setIndex] = useState(0);
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    setIndex((prev) => (prev + 1) % images.length);
+  }, 5000);
+  return () => clearInterval(interval);
+}, []);
 
   return (
     <div className="min-h-screen bg-gray-100">
@@ -20,23 +31,58 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* Hero Section */}
-      <section
-        id="home"
-        className="relative h-[90vh] flex items-center justify-center text-center text-white bg-cover bg-center"
-        style={{ backgroundImage: "url('/img1.jpg')" }}
-      >
-        <div className="relative z-10  bg-opacity-50 p-8 rounded max-w-2xl w-full">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4">Work Harder, Get Stronger</h1>
-          <p className="text-lg md:text-xl mb-6">Easy with our Team</p>
-          <Link
-            href="/contacts"
-            className="inline-block bg-red-600 text-white px-6 py-3 rounded-full text-sm sm:text-base hover:bg-red-700 transition"
-          >
-            Become a Member
-          </Link>
-        </div>
-      </section>
+     {/* Hero Section with Sliding Background */}
+<section
+  id="home"
+  className="relative h-[50vh] md:h-screen flex items-center justify-center text-center text-white overflow-hidden"
+>
+  {/* Background Images */}
+  <div className="absolute inset-0 w-full h-full z-10">
+    {images.map((src, i) => (
+      <Image
+        key={i}
+        src={src}
+        alt={`slide-${i}`}
+        fill
+        className={`object-cover transition-opacity duration-1000 ease-in-out ${
+          i === index ? 'opacity-100' : 'opacity-0'
+        }`}
+        priority={i === 0}
+      />
+    ))}
+    {/* Optional: dark overlay */}
+    {/* <div className="absolute inset-0 bg-black/40" /> */}
+  </div>
+
+  {/* Foreground Content */}
+  <div className="relative z-20 bg-opacity-50 p-6 sm:p-8 rounded max-w-2xl w-full">
+    <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold mb-4">
+      Work Harder, Get Stronger
+    </h1>
+    <p className="text-base sm:text-lg md:text-xl mb-6">Easy with our Team</p>
+    <Link
+      href="/contacts"
+      className="inline-block bg-red-600 text-white px-6 py-3 rounded-full text-sm sm:text-base hover:bg-red-700 transition"
+    >
+      Become a Member
+    </Link>
+  </div>
+
+  {/* Manual Controls */}
+  <button
+    onClick={() => setIndex((index - 1 + images.length) % images.length)}
+    className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-30 bg-black/40 p-3 rounded-full hover:bg-black/60 transition"
+  >
+    <ChevronLeft className="text-white w-6 h-6" />
+  </button>
+  <button
+    onClick={() => setIndex((index + 1) % images.length)}
+    className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-30 bg-black/40 p-3 rounded-full hover:bg-black/60 transition"
+  >
+    <ChevronRight className="text-white w-6 h-6" />
+  </button>
+</section>
+
 
       {/* Programs Section */}
       <section id="programs" className="py-20 bg-gradient-to-br from-white to-gray-100">

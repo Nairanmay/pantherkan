@@ -28,3 +28,15 @@ html {
   scroll-behavior: smooth;
 }
 
+@keyframes scroll-bg {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-bg {
+  animation: scroll-bg 30s linear infinite;
+}
