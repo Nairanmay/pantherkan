@@ -15,7 +15,7 @@ const programs = [
    {
     title: 'Rifle Shooting',
     desc: `Our rifle shooting class is designed to teach discipline, focus, and precision through structured firearm training. Students learn about firearm safety, proper handling, aiming techniques, and responsible shooting practices. Whether you're a beginner or looking to improve your skills, the class combines theory with hands-on practice under the supervision of certified instructors. It’s a great way to build confidence, sharpen concentration, and develop a strong sense of responsibility while enjoying a challenging and rewarding sport.`,
-    image: '/Rifle.jpeg',
+    image: '/rifle.jpeg',
     logo: '/riflelogo.png',
     className: 'Black Pantherkan Air Rifle Association',  
 },
@@ -36,7 +36,7 @@ const programs = [
 {
     title: 'Dance',
     desc: `Our classical dance classes offer a deep and graceful journey into traditional dance forms rooted in rich cultural heritage. Students learn posture, expression (abhinaya), rhythm (tala), and intricate movements under the guidance of experienced instructors. With a focus on discipline, storytelling, and artistic expression, these classes help build strong foundations in classical styles such as Bharatanatyam, Kathak, or Odissi. Ideal for all age groups, the classes foster cultural appreciation, body control, and inner confidence.`,
-    image: '/Dance.jpg',
+    image: '/dance.jpg',
     logo: '/Dancelogo.jpg',
     className: 'SAADHANA NRITHYALAYA',  
 },
