@@ -6,12 +6,12 @@ const committeeMembers = [
   {
     name: 'Dr. Biju Nair',
     designation: 'Founder & President',
-    image: '/committee/biju.jpg',
+    image: '/committee/bijunair.JPG',
   },
   {
     name: 'Lalita Nair',
     designation: 'vice President',
-    image: '/committee/namrata.jpg',
+    image: '/committee/lalita.JPG',
   },
   {
     name: 'Namrata Nair',
@@ -21,12 +21,12 @@ const committeeMembers = [
   {
     name: 'Prashant Chavan',
     designation: 'General Secretary',
-    image: '/committee/namrata.jpg',
+    image: '/committee/prashant.JPG',
   },
   {
     name: 'Tanmay Nair',
     designation: 'Joint Secretary',
-    image: '/committee/tanmay.jpg',
+    image: '/committee/tanm.JPG',
   },
   // Add more committee members as needed
 ];
@@ -35,22 +35,22 @@ const commissionMembers = [
   {
     name: 'Vikas Tiwari',
     designation: 'Refree Commission',
-    image: '/committee/shashwat.jpg',
+    image: '/committee/vikas.JPG',
   },
   {
     name: 'Arjun Tharu',
     designation: 'Tournament Commission',
-    image: '/committee/arjun.jpg',
+    image: '/committee/arjun.JPG',
   },
   {
     name: 'Akash Nair',
     designation: 'Technical Commission',
-    image: '/committee/kavita.jpg',
+    image: '/committee/akash.JPG',
   },
   {
     name: 'Omesh Shah',
     designation: 'Athlete Commission',
-    image: '/committee/kavita.jpg',
+    image: '/committee/omesh.JPG',
   },
   // Add more commission members as needed
 ];
