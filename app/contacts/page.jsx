@@ -34,39 +34,73 @@ export default function ContactPage() {
              className="space-y-5 text-sm sm:text-base"
             onSubmit={(e) => {
             e.preventDefault();
-            setFormSubmitted(true);
-          formRef.current?.reset();
-          setTimeout(() => setFormSubmitted(false), 3000);
+          //   setFormSubmitted(true);
+          
+          // setTimeout(() => setFormSubmitted(false), 3000);
+
+          
+  const form = formRef.current;
+
+  const data = {
+    name: form.name.value,
+    age: form.age.value,
+    phone: form.phone.value,
+    email: form.email.value,
+    address: form.address.value,
+    subject: form.subject.value,
+    message: form.message.value,
+  };
+
+  fetch("https://script.google.com/macros/s/AKfycbyFbNn-PV5VHeG1RY0wbJI-Qkzul6UpZ9hT93_e42Izsxp1nGzCdTlujKkbDC-fnRnjtg/exec", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  })
+    .then((res) => res.text())
+    .then((res) => {
+      console.log("Response:", res);
+      form.reset(); // clear form
+      alert("✅ Message sent! We'll get back to you soon.");
+    })
+    .catch((err) => {
+      console.error("Submission error:", err);
+      alert("❌ Failed to submit form. Please try again.");
+    });
               }}
 >
             
 
                 {/* Input Field Template */}
-                {[
-                  { icon: <User />, type: "text", placeholder: "Student's Name" },
-                  { icon: <Calendar />, type: "number", placeholder: "Student's Age", min: 1 },
-                  { icon: <Phone />, type: "tel", placeholder: "Phone Number (Student or Parent)" },
-                  { icon: <Mail />, type: "email", placeholder: "Email (Student or Parent)" },
-                  { icon: <MapPin />, type: "text", placeholder: "Your Address" },
-                  { icon: <MessageSquare />, type: "text", placeholder: "Subject" },
-                ].map(({ icon, type, placeholder, min }, i) => (
-                  <div key={i} className="relative">
-                    <div className="absolute left-3 top-3.5 text-gray-600">{icon}</div>
-                    <input
-                      type={type}
-                      placeholder={placeholder}
-                      min={min}
-                     className="w-full pl-10 pr-4 py-3 border rounded-lg text-gray-800 sm:text-gray-900 placeholder:text-gray-600 sm:placeholder:text-gray-700 focus-visible:outline-none focus:ring-2 focus:ring-red-500"
-
-                    />
-                  </div>
-                ))}
+               {[
+  { icon: <User />, type: "text", name: "name", placeholder: "Student's Name" },
+  { icon: <Calendar />, type: "number", name: "age", placeholder: "Student's Age", min: 1 },
+  { icon: <Phone />, type: "tel", name: "phone", placeholder: "Phone Number (Student or Parent)" },
+  { icon: <Mail />, type: "email", name: "email", placeholder: "Email (Student or Parent)" },
+  { icon: <MapPin />, type: "text", name: "address", placeholder: "Your Address" },
+  { icon: <MessageSquare />, type: "text", name: "subject", placeholder: "Subject" },
+].map(({ icon, type, name, placeholder, min }, i) => (
+  <div key={i} className="relative">
+    <div className="absolute left-3 top-3.5 text-gray-600">{icon}</div>
+    <input
+      name={name}
+      type={type}
+      placeholder={placeholder}
+      min={min}
+      required
+      className="w-full pl-10 pr-4 py-3 border rounded-lg text-gray-800"
+    />
+  </div>
+))}
 
                 {/* Message */}
-                <textarea
-                  placeholder="Your Message"
-                  className="w-full px-4 py-3 border rounded-lg h-32 focus-visible:outline-none focus:ring-2 focus:ring-red-500"
-                ></textarea>
+               <textarea
+  name="message" 
+  placeholder="Your Message"
+  className="w-full px-4 py-3 border rounded-lg h-32 focus-visible:outline-none focus:ring-2 focus:ring-red-500"
+/>
+
 
                 {/* Button */}
                 <button
