@@ -6,12 +6,12 @@ const weekdays = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'satur
 
 const scheduleDataA = [
  {
-      location: 'Pyramid Kids Zone, Vasai (W)',
+      location: 'Pyramid Kids Zone, Suncity, Vasai (W)',
       days: { friday: '6:00PM - 7:30PM', saturday: '6:00PM - 7:30PM' },
       instructor: 'Senpei. Tanmay Nair',
     },
     {
-      location: 'B.K.S English School, Vasai (W)',
+      location: 'B.K.S English School, Manikpur, Vasai (W)',
       days: { monday: '7:00PM - 8:30PAM', wednesday: '7:00PM - 8:30PM' },
       instructor: 'Senpei Alphonse Thomas',
     },
@@ -21,22 +21,22 @@ const scheduleDataA = [
       instructor: 'GM. Dr. Biju Nair',
     },
     {
-      location: 'St. Xaviers English School Umelman, Vasai (W)',
+      location: 'St. Xaviers English School, Manikpur, Vasai (W)',
       days: { monday: '5:00PM - 6:30AM', wednesday: '5:00PM - 6:30AM' },
       instructor: 'GM. Dr. Biju Nair',
     },
     {
-      location: 'Nazareth Primary, Vasai (W)',
+      location: 'Nazareth Primary School, Stella, Vasai (W)',
       days: { tuesday: '4:30PM - 6:00PM', thursday: '4:30PM - 6:00PM' },
       instructor: 'GM. Dr. Biju Nair',
     },
     {
-      location: 'St. Xaviers English School, Naigaon (W)',
+      location: 'St. Francis English School, Vijay Park, Naigaon (W)',
       days: { saturday: '4:00PM - 5:30PM', sunday: '4:00PM - 5:30PM' },
       instructor: 'GM. Dr. Biju Nair',
     },
     {
-      location: 'Shankar Mandir Umelman, Vasai (W)',
+      location: 'Shankar Mandir Compound, Umelman, Vasai (W)',
       days: { saturday: '5:30PM - 7:00PM', sunday: '5:30PM - 7:00PM' },
       instructor: 'Sensei Arjun Tharu',
     },
@@ -56,12 +56,12 @@ const scheduleDataA = [
       instructor: 'Sensei Namrata Nair',
  },
   {
-      location: 'Nazareth Secondary school, Vasai (W)',
+      location: 'Nazareth Convent High school, Vasai (W)',
       days: { friday: '4:30PM - 6:00PM', sunday: '4:30PM - 6:00PM' },
       instructor: 'GM Dr. Biju Nair',
  },
   {
-      location: 'Nishkalanka school, Vasai (W)',
+      location: 'Nishkalanka school, Near Dattani Mall, Vasai (W)',
       days: { tuesday: '5:00PM - 6:30PM', thursday: '5:00PM - 6:30PM' },
       instructor:<>
       Senpei Mithilesh Vishwakarma / <br />
@@ -89,20 +89,67 @@ const scheduleDataB = [
 ];
 
 const scheduleDataC = [
-{
-      location: 'Thakur Bhagwanidevi Musafir Public school, Naigoan (E)',
-      days: { saturday: '5:00PM - 6:30PM', sunday: '5:00AM - 5:30AM' },
-      instructor: 'Sensei Vikas Tiwari',
+ {
+      location: 'Pyramid Kids Zone, Suncity, Vasai (W)',
+      days: { friday: '6:00PM - 7:30PM', saturday: '6:00PM - 7:30PM' },
+      instructor: 'Senpei. Tanmay Nair',
+    },
+    {
+      location: 'B.K.S English School, Manikpur, Vasai (W)',
+      days: { monday: '7:00PM - 8:30PAM', wednesday: '7:00PM - 8:30PM' },
+      instructor: 'Senpei Alphonse Thomas',
+    },
+    {
+      location: 'St. Peters English High School, Vasai (W)',
+      days: { saturday: '11:30AM - 1:00PM', sunday: '11:30AM - 1:00PM' },
+      instructor: 'GM. Dr. Biju Nair',
+    },
+    {
+      location: 'St. Xaviers English School, Manikpur, Vasai (W)',
+      days: { monday: '5:00PM - 6:30AM', wednesday: '5:00PM - 6:30AM' },
+      instructor: 'GM. Dr. Biju Nair',
+    },
+    {
+      location: 'Nazareth Primary School, Stella, Vasai (W)',
+      days: { tuesday: '4:30PM - 6:00PM', thursday: '4:30PM - 6:00PM' },
+      instructor: 'GM. Dr. Biju Nair',
+    },
+    {
+      location: 'St. Francis English School, Vijay Park, Naigaon (W)',
+      days: { saturday: '4:00PM - 5:30PM', sunday: '4:00PM - 5:30PM' },
+      instructor: 'GM. Dr. Biju Nair',
+    },
+    {
+      location: 'Shankar Mandir Compound, Umelman, Vasai (W)',
+      days: { saturday: '5:30PM - 7:00PM', sunday: '5:30PM - 7:00PM' },
+      instructor: 'Sensei Arjun Tharu',
+    },
+    {
+      location: 'Sai Gagangiri Ganeshmandir Compound Umela Naigaon (W)',
+      days: { saturday: '9:00AM - 10:30AM', sunday: '9:00AM - 10:30AM' },
+      instructor: 'GM. Dr. Biju Nair',
+    },
+    {
+      location: 'Thakur Bhagwanidevi Musafir Public school, Naigaon (E)',
+      days: { saturday: '6:00PM - 7:30PM', sunday: '6:00PM - 7:30PM' },
+      instructor: 'Senpei Shashwat Yadav',
  },
   {
-      location: 'Nazareth Secondary school, Vasai (W)',
+      location: 'MSB school, Vasai (W)',
+      days: { saturday: '3:30PM - 5:00PM', sunday: '9:30AM - 11:00AM' },
+      instructor: 'Sensei Namrata Nair',
+ },
+  {
+      location: 'Nazareth Convent High school, Vasai (W)',
       days: { friday: '4:30PM - 6:00PM', sunday: '4:30PM - 6:00PM' },
       instructor: 'GM Dr. Biju Nair',
  },
   {
-      location: 'BKS, Vasai (W)',
+      location: 'Nishkalanka school, Near Dattani Mall, Vasai (W)',
       days: { tuesday: '5:00PM - 6:30PM', thursday: '5:00PM - 6:30PM' },
-      instructor: 'Senpei Alphonse Thomas',
+      instructor:<>
+      Senpei Mithilesh Vishwakarma / <br />
+      Senpei Bhavik Avaghade</>
  },
 
 ];

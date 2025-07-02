@@ -7,11 +7,12 @@ import { motion } from 'framer-motion';
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import SplashScreen from '@/components/SplashScreen';
-import RouteLoader from '@/components/RouteTransition';
+// import SplashScreen from '@/components/SplashScreen';
+// import RouteLoader from '@/components/RouteTransition';
+import ProgramSection from '@/components/ProgramSection';
 
 
-const images = ['/img1.jpg', '/bg2.webp', '/bg3.webp', '/bg4.webp'];
+const images = ['/img1.jpg', '/bg2.webp', '/bg3.webp', '/bg4.webp', '/bg5.JPG', '/bg6.JPG', '/bg7.JPG', ];
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,7 +24,7 @@ const [splashComplete, setSplashComplete] = useState(false);
 useEffect(() => {
   const interval = setInterval(() => {
     setIndex((prev) => (prev + 1) % images.length);
-  }, 5000);
+  }, 2000);
   return () => clearInterval(interval);
 }, []);
 
@@ -91,74 +92,11 @@ useEffect(() => {
   </button>
 </section>
 
+    {/* program section */}
 
-      {/* Programs Section */}
-      <section id="programs" className="py-20 bg-gradient-to-br from-white to-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-4 text-gray-800">Choose Program</h2>
-          <p className="text-base sm:text-lg text-center text-gray-600 mb-12">
-            We have experts in various programs to guide you on your journey.
-          </p>
+  <ProgramSection/>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: 'Karate',
-                desc: 'We have a team of 20+ Senior Instructors in Goju Ryu style karate.',
-                image: '/karate2.jpeg',
-              },
-              {
-                title: 'Rifle Shooting',
-                desc: 'We have two classes in Naigaon and Vasai for Rifle Shooting.',
-                image: '/rifle.jpeg',
-              },
-              {
-                title: 'Yoga',
-                desc: 'We conduct Yoga classes in Naigaon Center.',
-                image: '/yoga.jpeg',
-              },
-              {
-                title: 'Personal Training',
-                desc: 'We offer Personal Training for Kick Boxing and Karate at our Naigaon Center.',
-                image: '/PT.jpeg',
-              },
-              {
-                title: 'Dance',
-                desc: 'Dance classes available in Naigaon for teenagers. Contact us for details.',
-                image: '/dance.jpg',
-              },
-              {
-                title: 'Self Defence Training',
-                desc: 'We conduct self-defence seminars to promote women’s safety.',
-                image: '/sd.jpeg',
-              },
-            ].map((program, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
-              >
-                <div className="w-full h-56 relative">
-                  <Image
-                    src={program.image}
-                    alt={program.title}
-                    fill
-                    className="object-cover"
-                    priority={index === 0}
-                  />
-                </div>
-                <div className="p-6 text-center">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-2">{program.title}</h3>
-                  <p className="text-gray-600 text-sm sm:text-base">{program.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-
-
-      {/* Social Section */}
+    {/* Social Section */}
       <section id="social" className="bg-gray-900 py-16 text-center">
   <div className="max-w-3xl mx-auto px-4">
     <h2 className="text-4xl font-extrabold text-white mb-4 tracking-wide">

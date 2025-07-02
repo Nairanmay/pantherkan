@@ -110,7 +110,13 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-      </section>
+        </section>
+         {/* Footer */}
+      <footer className="bg-black text-white py-8 text-center">
+  <div className="container mx-auto px-4">
+    <p className="text-sm">&copy; {new Date().getFullYear()} Black Pantherkan Academy. All rights reserved.</p>
+  </div>
+</footer>
     </div>
   );
 }
