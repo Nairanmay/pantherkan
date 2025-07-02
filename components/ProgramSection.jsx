@@ -23,7 +23,7 @@ const programs = [
     title: 'Kick Boxing',
     desc: `Our kickboxing classes are high-energy workouts that blend martial arts techniques with fast-paced cardio. Perfect for all fitness levels, these sessions improve strength, endurance, and agility while teaching practical striking and self-defense skills. With expert guidance, students build confidence, burn calories, and relieve stress in a supportive and empowering environment.`,
     image: '/kb.webp',
-    logo: '/kickboxingogo.jpg',
+    logo: '/kickboxinglogo.jpg',
     className: 'Black Pantherkan Kick Boxing Association',  
 },
   {
