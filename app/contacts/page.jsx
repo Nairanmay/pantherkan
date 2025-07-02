@@ -1,12 +1,14 @@
 'use client';
 
 import { Mail, Phone, User, MessageSquare, MapPin, Calendar } from 'lucide-react';
-import { useState } from 'react';
+import { useState , useRef} from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
 export default function ContactPage() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const formRef = useRef(null);
 
   return (
     <div className="min-h-screen bg-gray-100">
@@ -27,7 +29,18 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
             {/* Contact Form */}
             <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg">
-              <form className="space-y-5 text-sm sm:text-base">
+              <form
+            ref={formRef}
+             className="space-y-5 text-sm sm:text-base"
+            onSubmit={(e) => {
+            e.preventDefault();
+            setFormSubmitted(true);
+          formRef.current?.reset();
+          setTimeout(() => setFormSubmitted(false), 3000);
+              }}
+>
+            
+
                 {/* Input Field Template */}
                 {[
                   { icon: <User />, type: "text", placeholder: "Student's Name" },
@@ -62,6 +75,7 @@ export default function ContactPage() {
                 >
                   Submit
                 </button>
+           
               </form>
             </div>
 
@@ -117,6 +131,28 @@ export default function ContactPage() {
     <p className="text-sm">&copy; {new Date().getFullYear()} Black Pantherkan Academy. All rights reserved.</p>
   </div>
 </footer>
+{formSubmitted && (
+  <div className="fixed inset-0 backdrop-blur-sm bg-black/40 flex items-center justify-center z-50">
+    <div className="bg-white p-8 rounded-2xl max-w-md w-full text-center shadow-2xl animate-fadeIn">
+      <h2 className="text-2xl font-bold text-green-600 mb-4">Thank You!</h2>
+      <p className="text-gray-700 mb-2">
+        Thank you for contacting us. We'll reach out to you soon.
+      </p>
+      <p className="text-gray-700 mb-6">
+        For urgent inquiries, feel free to call us at:
+        <br />
+        <strong className="text-red-600">+91 99706 16339</strong>
+      </p>
+      <button
+        onClick={() => setFormSubmitted(false)}
+        className="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition duration-300"
+      >
+        Close
+      </button>
+    </div>
+  </div>
+)}
+
     </div>
   );
 }
