@@ -7,6 +7,9 @@ import { motion } from 'framer-motion';
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import SplashScreen from '@/components/SplashScreen';
+import RouteLoader from '@/components/RouteTransition';
+
 
 const images = ['/img1.jpg', '/bg2.webp', '/bg3.webp', '/bg4.webp'];
 
@@ -15,6 +18,7 @@ export default function Home() {
   const [managementOpen, setManagementOpen] = useState(false);
   const [galleryOpen, setGalleryOpen] = useState(false);
   const [index, setIndex] = useState(0);
+const [splashComplete, setSplashComplete] = useState(false);
 
 useEffect(() => {
   const interval = setInterval(() => {
@@ -30,6 +34,10 @@ useEffect(() => {
         <meta name="description" content="Blackpantherkan Academy - Karate, Rifle Shooting, Yoga, and more" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
+    
+
+
 
      {/* Hero Section with Sliding Background */}
 <section
