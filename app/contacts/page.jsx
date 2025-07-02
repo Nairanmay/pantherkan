@@ -51,7 +51,7 @@ export default function ContactPage() {
     message: form.message.value,
   };
 
-  fetch("https://script.google.com/macros/s/AKfycbyFbNn-PV5VHeG1RY0wbJI-Qkzul6UpZ9hT93_e42Izsxp1nGzCdTlujKkbDC-fnRnjtg/exec", {
+  fetch("https://script.google.com/macros/s/AKfycby3hEgMzW_fh0eNu-fcuRtxu74b5Q7hAqg2uHMaE0sNZxAs7d3PSaO4FmV5rZEBe3XgWQ/exec", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
