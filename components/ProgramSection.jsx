@@ -34,7 +34,7 @@ const programs = [
     className: 'Black Pantherkan Academy Of Sports And Martial Arts',  
 },
 {
-    title: 'Dance',
+    title: 'Classical Dance',
     desc: `Our classical dance classes offer a deep and graceful journey into traditional dance forms rooted in rich cultural heritage. Students learn posture, expression (abhinaya), rhythm (tala), and intricate movements under the guidance of experienced instructors. With a focus on discipline, storytelling, and artistic expression, these classes help build strong foundations in classical styles such as Bharatanatyam, Kathak, or Odissi. Ideal for all age groups, the classes foster cultural appreciation, body control, and inner confidence.`,
     image: '/dance.jpg',
     logo: '/dancelogo.jpg',
