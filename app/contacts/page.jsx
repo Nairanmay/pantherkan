@@ -32,75 +32,83 @@ export default function ContactPage() {
               <form
             ref={formRef}
              className="space-y-5 text-sm sm:text-base"
-            onSubmit={(e) => {
-            e.preventDefault();
-          //   setFormSubmitted(true);
-          
-          // setTimeout(() => setFormSubmitted(false), 3000);
+        onSubmit={async (e) => {
+  e.preventDefault();
 
-          
-  const form = formRef.current;
-
-  const data = {
-    name: form.name.value,
-    age: form.age.value,
-    phone: form.phone.value,
-    email: form.email.value,
-    address: form.address.value,
-    subject: form.subject.value,
-    message: form.message.value,
+  const form = e.target;
+  const formData = {
+    name: form[0].value,
+    age: form[1].value,
+    phone: form[2].value,
+    email: form[3].value,
+    address: form[4].value,
+    subject: form[5].value,
+    message: form[6].value,
   };
 
-  fetch("https://script.google.com/macros/s/AKfycby3hEgMzW_fh0eNu-fcuRtxu74b5Q7hAqg2uHMaE0sNZxAs7d3PSaO4FmV5rZEBe3XgWQ/exec", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  })
-    .then((res) => res.text())
-    .then((res) => {
-      console.log("Response:", res);
-      form.reset(); // clear form
-      alert("✅ Message sent! We'll get back to you soon.");
-    })
-    .catch((err) => {
-      console.error("Submission error:", err);
-      alert("❌ Failed to submit form. Please try again.");
-    });
-              }}
+  try {
+  const response = await fetch("https://script.google.com/macros/s/xxxxxxxxxx/exec", {
+  method: "POST",
+  mode: "cors",
+  headers: {
+    "Content-Type": "text/plain",
+  },
+  body: JSON.stringify({
+    name: "John Doe",
+    age: 20,
+    phone: "9999999999",
+    email: "john@example.com",
+    address: "Test Address",
+    subject: "Enquiry",
+    message: "Hello from React!",
+  }),
+});
+
+  const data = await response.json(); // <--- will throw if invalid JSON
+
+  if (data.status === "success") {
+    setFormSubmitted(true);
+    form.reset();
+    setTimeout(() => setFormSubmitted(false), 3000);
+  } else {
+    alert("Submission failed: " + data.message);
+  }
+
+} catch (error) {
+  console.error("React error while submitting:", error); // 👈 shows exact issue
+  alert("Network error: " + error.message);
+}
+}}
+
 >
             
 
                 {/* Input Field Template */}
-               {[
-  { icon: <User />, type: "text", name: "name", placeholder: "Student's Name" },
-  { icon: <Calendar />, type: "number", name: "age", placeholder: "Student's Age", min: 1 },
-  { icon: <Phone />, type: "tel", name: "phone", placeholder: "Phone Number (Student or Parent)" },
-  { icon: <Mail />, type: "email", name: "email", placeholder: "Email (Student or Parent)" },
-  { icon: <MapPin />, type: "text", name: "address", placeholder: "Your Address" },
-  { icon: <MessageSquare />, type: "text", name: "subject", placeholder: "Subject" },
-].map(({ icon, type, name, placeholder, min }, i) => (
-  <div key={i} className="relative">
-    <div className="absolute left-3 top-3.5 text-gray-600">{icon}</div>
-    <input
-      name={name}
-      type={type}
-      placeholder={placeholder}
-      min={min}
-      required
-      className="w-full pl-10 pr-4 py-3 border rounded-lg text-gray-800"
-    />
-  </div>
-))}
+                {[
+                  { icon: <User />, type: "text", placeholder: "Student's Name" },
+                  { icon: <Calendar />, type: "number", placeholder: "Student's Age", min: 1 },
+                  { icon: <Phone />, type: "tel", placeholder: "Phone Number (Student or Parent)" },
+                  { icon: <Mail />, type: "email", placeholder: "Email (Student or Parent)" },
+                  { icon: <MapPin />, type: "text", placeholder: "Your Address" },
+                  { icon: <MessageSquare />, type: "text", placeholder: "Subject" },
+                ].map(({ icon, type, placeholder, min }, i) => (
+                  <div key={i} className="relative">
+                    <div className="absolute left-3 top-3.5 text-gray-600">{icon}</div>
+                    <input
+                      type={type}
+                      placeholder={placeholder}
+                      min={min}
+                     className="w-full pl-10 pr-4 py-3 border rounded-lg text-gray-800 sm:text-gray-900 placeholder:text-gray-600 sm:placeholder:text-gray-700 focus-visible:outline-none focus:ring-2 focus:ring-red-500"
+
+                    />
+                  </div>
+                ))}
 
                 {/* Message */}
-               <textarea
-  name="message" 
-  placeholder="Your Message"
-  className="w-full px-4 py-3 border rounded-lg h-32 focus-visible:outline-none focus:ring-2 focus:ring-red-500"
-/>
-
+                <textarea
+                  placeholder="Your Message"
+                  className="w-full px-4 py-3 border rounded-lg h-32 focus-visible:outline-none focus:ring-2 focus:ring-red-500"
+                ></textarea>
 
                 {/* Button */}
                 <button
