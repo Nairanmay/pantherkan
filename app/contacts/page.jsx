@@ -123,7 +123,8 @@ export default function ContactPage() {
                 <p>💬 <a href="https://wa.me/919970616339" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:underline">Chat on WhatsApp</a></p>
               </div>
               <iframe
-                src="https://www.google.com/maps/embed?pb=..."
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.553015837022!2d72.84393131476554!3d19.34519298693402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ae6455555555%3A0x5e96e887393abc6e!2sBlack%20Pantherkan%20karate%2C%20kick%20boxing%20and%20Rifle%20shooting%20classes!5e0!3m2!1sen!2sin!4v1719323740000!5m2!1sen!2sin
+"
                 width="100%"
                 height="250"
                 className="rounded-lg border-0 shadow"
