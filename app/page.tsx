@@ -10,7 +10,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 // import SplashScreen from '@/components/SplashScreen';
 // import RouteLoader from '@/components/RouteTransition';
 import ProgramSection from '@/components/ProgramSection';
-
+import StatsSection from '@/components/StatsSection';
 
 const images = ['/img1.jpg', '/bg2.webp', '/bg3.webp', '/bg4.webp', '/bg5.JPG', '/bg6.JPG', '/bg7.JPG', ];
 
@@ -200,8 +200,11 @@ useEffect(() => {
     </div>
   </div>
 </section>
-
-
+{/* 
+// Stats Section */}
+<div >
+  <StatsSection />
+</div>
 
 
       
@@ -241,6 +244,28 @@ useEffect(() => {
         </motion.div>
       </div>
     </section>
+
+    {/* insta widget  */}
+    {/* <section className="py-16 bg-white">
+  <div className="max-w-6xl mx-auto px-4">
+    <h2 className="text-3xl font-bold text-center mb-6">Our Instagram</h2>
+    </div> */}
+    {/* Instagram Feed Embed */}
+   {/* <section>
+  <div className="w-full">
+    <iframe
+      src="https://09a225073ac1434786b8a79b4437fb94.elf.site" // ✅ your Elfsight embed URL
+      width="100%"
+      height="600"
+      style={{ border: 0, overflow: 'hidden', backgroundColor: 'transparent' }}
+      scrolling="no"
+      frameBorder="0"
+      allow="encrypted-media" // optional for Instagram/Facebook embeds
+    />
+  </div>
+</section> */}
+{/* </section> */}
+
 
       {/* Contact Section */}
          <section id="contact-us" className="py-16 bg-gray-900 text-white">

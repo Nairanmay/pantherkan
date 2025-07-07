@@ -139,14 +139,14 @@ export default function CompetitionGalleryPage() {
   const [modalImage, setModalImage] = useState(null);
 
   return (
-    <div className="min-h-screen bg-gray-100 px-4 py-12 sm:px-6">
+    <div className="min-h-screen bg-gray-100 px-2 py-8 sm:px-4 md:px-6">
       {!selectedComp ? (
         <>
-          <h1 className="text-5xl font-bold text-center text-gray-800 mb-12">
-            Competition<span className="text-red-600">Gallery</span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800 mb-8">
+            Competition<span className="text-red-600"> Gallery</span>
           </h1>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
             {compData.map((comp, index) => (
               <div
                 key={index}
@@ -163,8 +163,8 @@ export default function CompetitionGalleryPage() {
                     priority={index < 2}
                   />
                 </div>
-                <div className="p-4">
-                  <h3 className="text-1xl font-semibold text-gray-800">{comp.title}</h3>
+                <div className="p-3 sm:p-4">
+                  <h3 className="text-base sm:text-lg font-semibold text-gray-800">{comp.title}</h3>
                   <p className="text-sm text-gray-500">{comp.year}</p>
                 </div>
               </div>
@@ -175,17 +175,17 @@ export default function CompetitionGalleryPage() {
         <div>
           {/* Back Button */}
           <button
-            className="mb-6 bg-red-600 text-white px-5 py-2 rounded hover:bg-red-700 transition"
+            className="mb-6 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition text-sm sm:text-base"
             onClick={() => setSelectedComp(null)}
           >
             ← Back
           </button>
 
-          <h2 className="text-5xl font-bold text-gray-800 mb-6 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-800 mb-6 text-center">
             {selectedComp.title} ({selectedComp.year})
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
             {selectedComp.images.map((src, index) => (
               <div
                 key={index}
@@ -207,11 +207,11 @@ export default function CompetitionGalleryPage() {
       {/* Image Modal */}
       {modalImage && (
         <div
-          className="fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center px-4"
+          className="fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center px-2 sm:px-4"
           onClick={() => setModalImage(null)}
         >
           <div
-            className="relative max-w-5xl w-full max-h-[90vh] overflow-auto"
+            className="relative max-w-full sm:max-w-3xl md:max-w-5xl w-full max-h-[90vh] overflow-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <Image
