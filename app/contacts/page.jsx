@@ -144,17 +144,24 @@ export default function ContactPage() {
       </footer>
 
       {/* Spinner Overlay */}
-      {loading && (
-        <div className="fixed inset-0 bg-white/80 backdrop-blur-sm z-50 flex items-center justify-center">
-          <Image
-            src="/logo.jpeg"
-            alt="Loading"
-            width={60}
-            height={60}
-            className="animate-spin"
-          />
-        </div>
-      )}
+    {loading && (
+  <div className="fixed inset-0 bg-white/90 backdrop-blur-md z-50 flex flex-col items-center justify-center gap-6 px-4">
+    <div className="animate-spin-slow rounded-full p-4 bg-white shadow-lg">
+      <Image
+        src="/logo2.png"
+        alt="Logo"
+        width={100}
+        height={100}
+        className="rounded-full"
+        style={{ animation: 'spin 3s linear infinite' }}
+      />
+    </div>
+    <div className="text-center">
+      <p className="text-gray-800 text-xl font-medium tracking-wide">Sending your message...</p>
+      <p className="text-sm text-gray-500 mt-2 italic">Please wait a moment</p>
+    </div>
+  </div>
+)}
 
       {/* Thank You Popup */}
       {formSubmitted && (
