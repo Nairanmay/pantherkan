@@ -51,7 +51,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <Link href="/athlete" className="hover:text-gray-500">Athlete</Link>
+          <Link href="./athlete" className="hover:text-gray-500">Athlete</Link>
 
           {/* Register Button */}
           <Link
@@ -143,7 +143,7 @@ export default function Navbar() {
     </details>
 
     <Link
-      href="/athlete"
+      href="./athlete"
       className="block py-2 px-2 rounded hover:bg-white/10 hover:text-red-400 transition"
       onClick={handleNavClick}
     >
