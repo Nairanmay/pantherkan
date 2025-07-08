@@ -33,7 +33,7 @@ export default function Navbar() {
               <Link href="./#programs" className="block px-4 py-2 hover:bg-gray-100">Our Programs</Link>
               <Link href="./commitee#commitee" className="block px-4 py-2 hover:bg-gray-100">Committee</Link>
               <Link href="./commitee#comission" className="block px-4 py-2 hover:bg-gray-100">Commission</Link>
-              <Link href="./#about" className="block px-4 py-2 hover:bg-gray-100">Our Organization</Link>
+              <Link href="./our_organisation" className="block px-4 py-2 hover:bg-gray-100">Our Organization</Link>
             </div>
           </div>
 
@@ -99,7 +99,7 @@ export default function Navbar() {
         <Link href="./commitee#comission" className="block hover:text-red-400" onClick={handleNavClick}>
           Commission
         </Link>
-        <Link href="./#about" className="block hover:text-red-400" onClick={handleNavClick}>
+        <Link href="./our_organisation" className="block hover:text-red-400" onClick={handleNavClick}>
           Our Organization
         </Link>
       </div>

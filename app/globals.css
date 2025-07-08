@@ -63,3 +63,10 @@ html {
   animation: spin 1.2s linear infinite;
 }
 
+.bg-parallax {
+  background-image: url('/about.png'); /* Replace with your actual image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* This creates the parallax effect */
+}
