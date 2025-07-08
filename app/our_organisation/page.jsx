@@ -147,7 +147,7 @@ export default function AboutPage() {
     <p className="text-lg text-gray-700 max-w-4xl mx-auto mb-8">
       Black Pantherkan is powered by a team of highly qualified instructors with decades of combined experience 
       in martial arts and sports coaching. Our faculty includes certified national-level trainers, and a strong panel of 
-      judges and referees affiliated with the <strong>Karate India Organization (KIO)</strong> and the <strong>World Professional Karate Federation (WPKF)</strong>.
+      judges and referees affiliated with the <strong>Karate India Organization (KIO)</strong> and the <strong>World Pantherkan Karate Federation (WPKF)</strong>.
     </p>
 
     {/* Logos between paragraph and cards */}
