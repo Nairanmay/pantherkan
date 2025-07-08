@@ -52,7 +52,7 @@ export default function AboutPage() {
       </section>
 
 {/* Founder Section */}
-<section className="bg-white py-16 px-6 border-t border-gray-200">
+<section id='founder' className="bg-white py-16 px-6 border-t border-gray-200">
   <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
     
     {/* Founder Image */}

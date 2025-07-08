@@ -239,6 +239,12 @@ useEffect(() => {
               <p className="mt-1 text-sm text-gray-600">
                 Founder and principal of <span className="font-medium">Blackpantherkan Academy</span>.
               </p>
+              <Link 
+  href="./our_organisation#founder" // ✅ Change this to your actual route
+  className="inline-block mt-3 text-sm text-indigo-600 font-medium hover:underline"
+>
+  Read More →
+</Link>
             </div>
           </div>
         </motion.div>

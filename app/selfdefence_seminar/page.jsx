@@ -22,7 +22,7 @@ const compData = [
     year: '2016',
     title: 'self defence seminar - Andheri',
     images: [
-       '/self_defence/2016/img5.JPG',
+       '/self_defence/2016/img5.jpg',
      '/self_defence/2016/img6.JPG',
         '/self_defence/2016/img7.JPG',
         '/self_defence/2016/img8.JPG',
