@@ -7,47 +7,90 @@ import { X } from 'lucide-react';
 const athletes = [
   {
     name: 'Alphonse Thomas',
-    image: '/athletes/aryan.jpg',
+    image: '/athlete/alphonse.jpeg',
   },
   {
     name: 'Vedant Kadam',
-    image: '/athletes/sneha.jpg',
+    image: '/athlete/vedant.jpeg',
   },
   {
     name: 'Bhavik Avaghade',
-    image: '/athletes/rahul.jpg',
+    image: '/athlete/bhavik.jpeg',
   },
   {
     name: 'Mithilesh Vishwakarma',
-    image: '/athletes/nisha.jpg',
+    image: '/logo.jpeg',
   },
  {
     name: 'Manav Shrivastav',
-    image: '/athletes/nisha.jpg',
+    image: '/athlete/manav.jpeg',
   },
    {
     name: 'Juhit Patil',
-    image: '/athletes/nisha.jpg',
+    image: '/athlete/juhit.JPG',
   },
    {
     name: 'Pavitra Devendra',
-    image: '/athletes/nisha.jpg',
+    image: '/athlete/pooja2.jpeg',
   },
    {
     name: 'Vikas Tiwari',
-    image: '/athletes/nisha.jpg',
+    image: '/logo.jpeg',
   },
    {
     name: 'Shashwat Yadav',
-    image: '/athletes/nisha.jpg',
+    image: '/athlete/shashwat.jpeg',
   },
    {
     name: 'Kartik Servi',
-    image: '/athletes/nisha.jpg',
+    image: '/logo.jpeg',
   },
    {
-    name: 'Anaisha Nair',
-    image: '/athletes/nisha.jpg',
+    name: 'Mahi Vaity',
+    image: '/logo.jpeg',
+  },
+   {
+    name: 'Klyonel Gonsalves',
+    image: '/athlete/kly.jpeg',
+  },
+   {
+    name: 'Shanaya Sajit',
+    image: '/athlete/Shanaya.jpeg',
+  },
+   {
+    name: 'Rudra Bhosle',
+    image: '/logo.jpeg',
+  }, {
+    name: 'Devarsh Nalawade',
+    image: '/athlete/devarsh.jpeg',
+  },
+   {
+    name: 'Biswaranjan Behera',
+    image: '/logo.jpeg',
+  },
+   {
+    name: 'Shushrut Shinde',
+    image: '/athlete/shuhrut.jpeg',
+  },
+   {
+    name: 'Kartik Nair',
+    image: '/athlete/kartik2.jpeg',
+  },
+   {
+    name: 'Poornima Tharu',
+    image: '/logo.jpeg',
+  },
+   {
+    name: 'Pratiksha Tharu',
+    image: '/logo.jpeg',
+  },
+   {
+    name: 'Siddharth Yangaldas',
+    image: '/logo.jpeg',
+  },
+   {
+    name: 'Ayush Vaishya',
+    image: '/logo.jpeg',
   },
 ];
 
@@ -107,6 +150,12 @@ export default function AthletesPage() {
           </div>
         </div>
       )}
+        {/* Footer */}
+      <footer className="bg-black text-white py-8 text-center">
+        <div className="container mx-auto px-4">
+          <p className="text-sm">&copy; {new Date().getFullYear()} Black Pantherkan Academy. All rights reserved.</p>
+        </div>
+      </footer>
     </div>
   );
 }

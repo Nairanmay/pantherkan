@@ -5,148 +5,148 @@ import Image from 'next/image';
 
 const compData = [
   {
-    year: '2016',
-    title: 'self defence seminar - Rangaon',
-    images: [
-       '/self_defence/2016/img4.JPG',
-     '/self_defence/2016/img1.JPG',
-        '/self_defence/2016/img2.JPG',
-        '/self_defence/2016/img3.JPG',
-        '/self_defence/2016/img9.jpg',
-        '/self_defence/2016/img10.jpg', 
-        '/self_defence/2016/img11.jpg',
+//     year: '2016',
+//     title: 'self defence seminar - Rangaon',
+//     images: [
+//        '/self_defence/2016/img4.JPG',
+//      '/self_defence/2016/img1.JPG',
+//         '/self_defence/2016/img2.JPG',
+//         '/self_defence/2016/img3.JPG',
+//         '/self_defence/2016/img9.jpg',
+//         '/self_defence/2016/img10.jpg', 
+//         '/self_defence/2016/img11.jpg',
     
-    ],
-  },
-    {
-    year: '2016',
-    title: 'self defence seminar - Andheri',
-    images: [
-       '/self_defence/2016/img5.JPG',
-     '/self_defence/2016/img6.JPG',
-        '/self_defence/2016/img7.JPG',
-        '/self_defence/2016/img8.JPG',
+//     ],
+//   },
+//     {
+//     year: '2016',
+//     title: 'self defence seminar - Andheri',
+//     images: [
+//        '/self_defence/2016/img5.JPG',
+//      '/self_defence/2016/img6.JPG',
+//         '/self_defence/2016/img7.JPG',
+//         '/self_defence/2016/img8.JPG',
     
-    ],
-  },
-  {
-    year: '2017',
-    title: 'self defence seminar - Kaman',
-    images: [
-     '/self_defence/2017/img1.jpg',
-        '/self_defence/2017/img2.jpg',
-        '/self_defence/2017/img3.jpg',
-        '/self_defence/2017/img4.jpg',
-        '/self_defence/2017/img5.jpg',
-    ],
-  },
-  {
-    year: '2019',
-    title: 'self defence seminar - Naigoan(E)',
-    images: [
-      '/self_defence/2019/img2.jpg',
-        '/self_defence/2019/img1.jpg',
-        '/self_defence/2019/img3.jpg',
-        '/self_defence/2019/img4.jpg',
-        '/self_defence/2019/img5.jpg',
-        '/self_defence/2019/img6.jpg',
-    ],
-  },
-  {
-    year: '2019',
-    title: 'self defence seminar - Don Bosco School',
-    images: [
-      '/self_defence/2019.1/img1.JPG',
-        '/self_defence/2019.1/img2.JPG',
-        '/self_defence/2019.1/img3.JPG',
-        '/self_defence/2019.1/img4.JPG',
-        '/self_defence/2019.1/img5.JPG',
-        '/self_defence/2019.1/img6.JPG',
-        '/self_defence/2019.1/img7.JPG',
-        '/self_defence/2019.1/img8.JPG',
-        '/self_defence/2019.1/img9.JPG',
-        '/self_defence/2019.1/img10.JPG',
-        '/self_defence/2019.1/img11.JPG',
+//     ],
+//   },
+//   {
+//     year: '2017',
+//     title: 'self defence seminar - Kaman',
+//     images: [
+//      '/self_defence/2017/img1.jpg',
+//         '/self_defence/2017/img2.jpg',
+//         '/self_defence/2017/img3.jpg',
+//         '/self_defence/2017/img4.jpg',
+//         '/self_defence/2017/img5.jpg',
+//     ],
+//   },
+//   {
+//     year: '2019',
+//     title: 'self defence seminar - Naigoan(E)',
+//     images: [
+//       '/self_defence/2019/img2.jpg',
+//         '/self_defence/2019/img1.jpg',
+//         '/self_defence/2019/img3.jpg',
+//         '/self_defence/2019/img4.jpg',
+//         '/self_defence/2019/img5.jpg',
+//         '/self_defence/2019/img6.jpg',
+//     ],
+//   },
+//   {
+//     year: '2019',
+//     title: 'self defence seminar - Don Bosco School',
+//     images: [
+//       '/self_defence/2019.1/img1.JPG',
+//         '/self_defence/2019.1/img2.JPG',
+//         '/self_defence/2019.1/img3.JPG',
+//         '/self_defence/2019.1/img4.JPG',
+//         '/self_defence/2019.1/img5.JPG',
+//         '/self_defence/2019.1/img6.JPG',
+//         '/self_defence/2019.1/img7.JPG',
+//         '/self_defence/2019.1/img8.JPG',
+//         '/self_defence/2019.1/img9.JPG',
+//         '/self_defence/2019.1/img10.JPG',
+//         '/self_defence/2019.1/img11.JPG',
 
-    ],
-    },
-    {
-    year: '2019',
-    title: 'self defence seminar - vasai',
-    images: [
-      '/self_defence/2019.2/img1.jpg',
-       '/self_defence/2019.2/img2.jpg',
-        '/self_defence/2019.2/img3.jpg',
-        '/self_defence/2019.2/img4.jpg',
-        '/self_defence/2019.2/img5.jpg',
-        '/self_defence/2019.2/img6.jpg',
-        '/self_defence/2019.2/img7.jpg',
-        '/self_defence/2019.2/img8.jpg',
-    ],
-    },
-     {
-    year: '2019',
-    title: 'self defence seminar - St. Annes School, Vasai',
-    images: [
-      '/self_defence/2019.3/img2.jpg',
-       '/self_defence/2019.2/img1.jpg',
-        '/self_defence/2019.2/img3.jpg',
-        '/self_defence/2019.2/img4.jpg',
-        '/self_defence/2019.2/img5.jpg',
-        '/self_defence/2019.2/img6.jpg',
-        '/self_defence/2019.2/img7.jpg',
-    ],
-    },
-    {
-    year: '2019',
-    title: 'self defence seminar - vasai',
-    images: [
-      '/self_defence/2019.2/img1.jpg',
-       '/self_defence/2019.2/img2.jpg',
-        '/self_defence/2019.2/img3.jpg',
-        '/self_defence/2019.2/img4.jpg',
-        '/self_defence/2019.2/img5.jpg',
-        '/self_defence/2019.2/img6.jpg',
-        '/self_defence/2019.2/img7.jpg',
-        '/self_defence/2019.2/img8.jpg',
-          '/self_defence/2019.2/img9.jpg',
-    ],
-    },
-    {
-    year: '2019',
-    title: 'self defence seminar - Womens day',
-    images: [
-      '/self_defence/2019.4/img1.jpg',
-       '/self_defence/2019.4/img2.jpg',
-        '/self_defence/2019.4/img3.jpg',
-        '/self_defence/2019.4/img4.jpg',
-        '/self_defence/2019.4/img5.jpg',
-        '/self_defence/2019.4/img6.jpg',
-        '/self_defence/2019.4/img7.jpg',
-        '/self_defence/2019.4/img8.jpg',
-    ],
-    },
-     {
-    year: '2019',
-    title: 'self defence seminar - Rishi Valmiki School, Naigoan',
-    images: [
-      '/self_defence/2019.5/img1.jpg',
-      '/self_defence/2019.5/img2.jpg',
-      '/self_defence/2019.5/img3.jpg',
-        '/self_defence/2019.5/img4.jpg',
-        '/self_defence/2019.5/img5.jpg',
-    ],
-    },
-     {
-    year: '2020',
-    title: 'self defence seminar - Black Pantherkan x Amchi Vasai',
-    images: [
-      '/self_defence/2020/img1.jpg',
-     '/self_defence/2020/img2.jpg',
-        '/self_defence/2020/img3.jpg',
-        '/self_defence/2020/img4.jpg',
-    ],
-    },
+//     ],
+//     },
+//     {
+//     year: '2019',
+//     title: 'self defence seminar - vasai',
+//     images: [
+//       '/self_defence/2019.2/img1.jpg',
+//        '/self_defence/2019.2/img2.jpg',
+//         '/self_defence/2019.2/img3.jpg',
+//         '/self_defence/2019.2/img4.jpg',
+//         '/self_defence/2019.2/img5.jpg',
+//         '/self_defence/2019.2/img6.jpg',
+//         '/self_defence/2019.2/img7.jpg',
+//         '/self_defence/2019.2/img8.jpg',
+//     ],
+//     },
+//      {
+//     year: '2019',
+//     title: 'self defence seminar - St. Annes School, Vasai',
+//     images: [
+//       '/self_defence/2019.3/img2.jpg',
+//        '/self_defence/2019.2/img1.jpg',
+//         '/self_defence/2019.2/img3.jpg',
+//         '/self_defence/2019.2/img4.jpg',
+//         '/self_defence/2019.2/img5.jpg',
+//         '/self_defence/2019.2/img6.jpg',
+//         '/self_defence/2019.2/img7.jpg',
+//     ],
+//     },
+//     {
+//     year: '2019',
+//     title: 'self defence seminar - vasai',
+//     images: [
+//       '/self_defence/2019.2/img1.jpg',
+//        '/self_defence/2019.2/img2.jpg',
+//         '/self_defence/2019.2/img3.jpg',
+//         '/self_defence/2019.2/img4.jpg',
+//         '/self_defence/2019.2/img5.jpg',
+//         '/self_defence/2019.2/img6.jpg',
+//         '/self_defence/2019.2/img7.jpg',
+//         '/self_defence/2019.2/img8.jpg',
+//           '/self_defence/2019.2/img9.jpg',
+//     ],
+//     },
+//     {
+//     year: '2019',
+//     title: 'self defence seminar - Womens day',
+//     images: [
+//       '/self_defence/2019.4/img1.jpg',
+//        '/self_defence/2019.4/img2.jpg',
+//         '/self_defence/2019.4/img3.jpg',
+//         '/self_defence/2019.4/img4.jpg',
+//         '/self_defence/2019.4/img5.jpg',
+//         '/self_defence/2019.4/img6.jpg',
+//         '/self_defence/2019.4/img7.jpg',
+//         '/self_defence/2019.4/img8.jpg',
+//     ],
+//     },
+//      {
+//     year: '2019',
+//     title: 'self defence seminar - Rishi Valmiki School, Naigoan',
+//     images: [
+//       '/self_defence/2019.5/img1.jpg',
+//       '/self_defence/2019.5/img2.jpg',
+//       '/self_defence/2019.5/img3.jpg',
+//         '/self_defence/2019.5/img4.jpg',
+//         '/self_defence/2019.5/img5.jpg',
+//     ],
+//     },
+//      {
+//     year: '2020',
+//     title: 'self defence seminar - Black Pantherkan x Amchi Vasai',
+//     images: [
+//       '/self_defence/2020/img1.jpg',
+//      '/self_defence/2020/img2.jpg',
+//         '/self_defence/2020/img3.jpg',
+//         '/self_defence/2020/img4.jpg',
+//     ],
+//     },
 //      {
 //     year: '2025',
 //     title: 'Interschool Karate Competition',
@@ -192,7 +192,7 @@ const compData = [
                   
 
 //     ],
-//   },
+  },
 ];
 
 export default function CompetitionGalleryPage() {
@@ -204,10 +204,16 @@ export default function CompetitionGalleryPage() {
       {!selectedComp ? (
         <>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800 mb-8">
-            Self Defence Seminars<span className="text-red-600"> Gallery</span>
+            Refree Seminars<span className="text-red-600"> Gallery</span>
+          </h1>
+          <br />
+          <br />
+          <br />
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800 mb-8">
+            NOTHING TO SEE HERE CURRENTLY
           </h1>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
             {compData.map((comp, index) => (
               <div
                 key={index}
@@ -230,7 +236,7 @@ export default function CompetitionGalleryPage() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </>
       ) : (
         <div>
@@ -292,11 +298,11 @@ export default function CompetitionGalleryPage() {
         </div>
       )}
         {/* Footer */}
-      <footer className="bg-black text-white py-8 text-center">
+      {/* <footer className="bg-black text-white py-8 text-center">
         <div className="container mx-auto px-4">
           <p className="text-sm">&copy; {new Date().getFullYear()} Black Pantherkan Academy. All rights reserved.</p>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 }

@@ -46,7 +46,7 @@ export default function Navbar() {
             <div className="absolute left-0 mt-2 w-60 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible invisible transition duration-300 z-10">
               <Link href="./camp" className="block px-4 py-2 hover:bg-gray-100">Camp</Link>
               <Link href="./competition" className="block px-4 py-2 hover:bg-gray-100">Competition</Link>
-              <Link href="./refree" className="block px-4 py-2 hover:bg-gray-100">Referee Seminar</Link>
+              <Link href="./refree_seminar" className="block px-4 py-2 hover:bg-gray-100">Referee Seminar</Link>
               <Link href="./selfdefence_seminar" className="block px-4 py-2 hover:bg-gray-100">Self Defence Seminar</Link>
             </div>
           </div>
@@ -133,7 +133,7 @@ export default function Navbar() {
         <Link href="/competition" className="block hover:text-red-400" onClick={handleNavClick}>
           Competition
         </Link>
-        <Link href="/refree" className="block hover:text-red-400" onClick={handleNavClick}>
+        <Link href="/refree_seminar" className="block hover:text-red-400" onClick={handleNavClick}>
           Referee Seminar
         </Link>
         <Link href="/selfdefence_seminar" className="block hover:text-red-400" onClick={handleNavClick}>

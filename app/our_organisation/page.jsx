@@ -278,6 +278,67 @@ export default function AboutPage() {
   </div>
 </section>
 
+
+<section className="bg-gray-100 py-8 px-4">
+  <div className="max-w-4xl mx-auto text-center mb-6">
+    <h2 className="text-3xl font-bold text-gray-800 mb-2">Annual Events</h2>
+    <p className="text-base text-gray-600">
+      Black Pantherkan hosts impactful events that shape discipline and excellence.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+    {/* Training & Grading Camp */}
+    <div className="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+      <div className="w-full aspect-[4/3] relative">
+        <img
+          src="/bg3.webp"
+          alt="Training & Grading Camp"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="p-4 text-left">
+        <h3 className="text-lg font-semibold text-gray-800 mb-1">Training & Grading Camp</h3>
+        <p className="text-sm text-gray-600 mb-3">
+          Annual promotion event with focused training and belt exams under certified instructors.
+        </p>
+        <a
+          href="./camp"
+          className="inline-block px-4 py-2 bg-black text-white rounded-full text-xs hover:bg-red-600 transition"
+        >
+          View More
+        </a>
+      </div>
+    </div>
+
+    {/* National Pantherkan Cup */}
+    <div className="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+      <div className="w-full aspect-[4/3] relative">
+        <img
+          src="/bg7.JPG"
+          alt="National Pantherkan Cup"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="p-4 text-left">
+        <h3 className="text-lg font-semibold text-gray-800 mb-1">National Pantherkan Cup</h3>
+        <p className="text-sm text-gray-600 mb-3">
+          Prestigious national karate championship hosted annually with competitors from across India.
+        </p>
+        <a
+          href="./competition"
+          className="inline-block px-4 py-2 bg-black text-white rounded-full text-xs hover:bg-red-600 transition"
+        >
+          View More
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
       {/* Footer */}
       <footer className="bg-black text-white py-8 text-center">
         <div className="container mx-auto px-4">
