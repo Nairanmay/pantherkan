@@ -20,7 +20,7 @@ const committeeMembers = [
   {
     name: 'Namrata Nair',
     designation: 'Treasurer',
-    image: '/committee/nammu.JPG',
+    image: '/committee/nammu2.jpg',
     yearsActive: '2023–Present',
     info: 'Manages financial planning and budget allocation.',
   },
