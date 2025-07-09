@@ -5,19 +5,15 @@ import Image from 'next/image';
 
 const compData = [
   {
-//     year: '2016',
-//     title: 'self defence seminar - Rangaon',
-//     images: [
-//        '/self_defence/2016/img4.JPG',
-//      '/self_defence/2016/img1.JPG',
-//         '/self_defence/2016/img2.JPG',
-//         '/self_defence/2016/img3.JPG',
-//         '/self_defence/2016/img9.jpg',
-//         '/self_defence/2016/img10.jpg', 
-//         '/self_defence/2016/img11.jpg',
+    year: '2024',
+    title: '3rd WPKF Refree Seminar',
+    images: [
+       '/refree_seminar/img1.jpg',
+     '/refree_seminar/img2.jpg',
+     '/refree_seminar/img3.jpg',
     
-//     ],
-//   },
+    ],
+  },
 //     {
 //     year: '2016',
 //     title: 'self defence seminar - Andheri',
@@ -192,7 +188,7 @@ const compData = [
                   
 
 //     ],
-  },
+
 ];
 
 export default function CompetitionGalleryPage() {
@@ -209,11 +205,9 @@ export default function CompetitionGalleryPage() {
           <br />
           <br />
           <br />
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800 mb-8">
-            NOTHING TO SEE HERE CURRENTLY
-          </h1>
+         
 
-          {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
             {compData.map((comp, index) => (
               <div
                 key={index}
@@ -236,7 +230,7 @@ export default function CompetitionGalleryPage() {
                 </div>
               </div>
             ))}
-          </div> */}
+          </div>
         </>
       ) : (
         <div>

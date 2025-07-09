@@ -104,6 +104,10 @@ const athletes = [
     name: 'Nitesh Vishwakarma',
     image: '/athlete/nitesh.JPG',
   },
+  {
+    name: 'Anantavishnu Nair',
+    image: '/athlete/vishnu.JPG',
+  },
 ];
 
 export default function AthletesPage() {

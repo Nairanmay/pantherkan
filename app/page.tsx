@@ -12,7 +12,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import ProgramSection from '@/components/ProgramSection';
 import StatsSection from '@/components/StatsSection';
 
-const images = ['/img1.jpg', '/bg2.webp', '/bg3.webp', '/bg4.webp', '/bg5.JPG', '/bg6.JPG', '/bg7.JPG', ];
+const images = ['/img1.jpg', '/bg2.webp', '/bg3.webp', '/bg4.webp', '/bg5.JPG', '/bg6.JPG', '/bg7.JPG','/bg8.JPG','/bg9.JPG' ];
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);

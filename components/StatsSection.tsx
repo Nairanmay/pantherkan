@@ -7,7 +7,7 @@ import { CalendarDays, Users, Home, Trophy } from 'lucide-react';
 const stats = [
   { icon: <CalendarDays size={32} />, label: 'Years of Experience', value: 25 },
   { icon: <Users size={32} />, label: 'Number of Students', value: 460 },
-  { icon: <Home size={32} />, label: 'Karate Training Classes', value: 20 },
+  { icon: <Home size={32} />, label: 'Training Centers', value: 20 },
   { icon: <Trophy size={32} />, label: 'Awards Won', value: 107 },
 ];
 
