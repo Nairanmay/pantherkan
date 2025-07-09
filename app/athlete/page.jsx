@@ -19,7 +19,7 @@ const athletes = [
   },
   {
     name: 'Mithilesh Vishwakarma',
-    image: '/logo.jpeg',
+    image: '/athlete/myth.JPG',
   },
  {
     name: 'Manav Shrivastav',
@@ -36,18 +36,18 @@ const athletes = [
    {
     name: 'Vikas Tiwari',
     image: '/logo.jpeg',
-  },
+  },,
    {
     name: 'Shashwat Yadav',
     image: '/athlete/shashwat.jpeg',
   },
    {
     name: 'Kartik Servi',
-    image: '/logo.jpeg',
+    image: '/athlete/kartiks.jpg',
   },
    {
     name: 'Mahi Vaity',
-    image: '/logo.jpeg',
+    image: '/athlete/mahi.JPG',
   },
    {
     name: 'Klyonel Gonsalves',
@@ -59,14 +59,14 @@ const athletes = [
   },
    {
     name: 'Rudra Bhosle',
-    image: '/logo.jpeg',
+    image: '/athlete/rudra.JPG',
   }, {
     name: 'Devarsh Nalawade',
     image: '/athlete/devarsh.jpeg',
   },
    {
     name: 'Biswaranjan Behera',
-    image: '/logo.jpeg',
+    image: '/athlete/jadiya.JPG',
   },
    {
     name: 'Shushrut Shinde',
@@ -78,11 +78,11 @@ const athletes = [
   },
    {
     name: 'Purnima Tharu',
-    image: '/logo.jpeg',
+    image: '/athlete/purnima.JPG',
   },
    {
     name: 'Pratiksha Tharu',
-    image: '/logo.jpeg',
+    image: '/athlete/pratiksha.JPG',
   },
    {
     name: 'Siddharth Yangaldas',
@@ -91,6 +91,18 @@ const athletes = [
    {
     name: 'Ayush Vaishya',
     image: '/logo.jpeg',
+  },
+    {
+    name: 'Lakshita Shetty',
+    image: '/athlete/lakshita.jpg',
+  },
+   {
+    name: 'Namira Khan',
+    image: '/athlete/namira.JPG',
+  },
+   {
+    name: 'Nitesh Vishwakarma',
+    image: '/athlete/nitesh.JPG',
   },
 ];
 
@@ -151,11 +163,11 @@ export default function AthletesPage() {
         </div>
       )}
         {/* Footer */}
-      <footer className="bg-black text-white py-8 text-center">
+      {/* <footer className="bg-black text-white py-8 text-center">
         <div className="container mx-auto px-4">
           <p className="text-sm">&copy; {new Date().getFullYear()} Black Pantherkan Academy. All rights reserved.</p>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 }
