@@ -55,7 +55,7 @@ export default function Navbar() {
 
           {/* Register Button */}
           <Link
-            href="/register"
+            href="https://forms.gle/JtqbJdUEiet6JNmP7"
             className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition"
           >
             Register Now
@@ -151,7 +151,7 @@ export default function Navbar() {
     </Link>
 
     <Link
-      href="/register"
+      href="https://forms.gle/JtqbJdUEiet6JNmP7"
       className="block mt-3 text-center bg-red-600 text-white py-2 rounded hover:bg-red-700 transition shadow-md"
       onClick={handleNavClick}
     >
