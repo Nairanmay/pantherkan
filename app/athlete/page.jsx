@@ -100,7 +100,7 @@ export default function AthletesPage() {
   return (
     <div className="min-h-screen bg-gray-100 py-12 px-4">
       <div className="max-w-6xl mx-auto text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">Our Athletes</h1>
+        <h1 className="text-4xl font-bold text-gray-800 mb-4">Our <span className="text-[red]">Athletes</span></h1>
         <p className="text-lg text-gray-600">Meet the champions trained at Black Pantherkan</p>
       </div>
 
