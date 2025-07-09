@@ -137,11 +137,11 @@ export default function ContactPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black text-white py-8 text-center">
+      {/* <footer className="bg-black text-white py-8 text-center">
         <div className="container mx-auto px-4">
           <p className="text-sm">&copy; {new Date().getFullYear()} Black Pantherkan Academy. All rights reserved.</p>
         </div>
-      </footer>
+      </footer> */}
 
       {/* Spinner Overlay */}
     {loading && (
