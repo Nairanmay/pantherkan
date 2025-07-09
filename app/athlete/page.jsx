@@ -55,7 +55,7 @@ const athletes = [
   },
    {
     name: 'Shanaya Sajit',
-    image: '/athlete/Shanaya.jpeg',
+    image: '/athlete/shanaya.jpeg',
   },
    {
     name: 'Rudra Bhosle',
