@@ -77,7 +77,7 @@ const athletes = [
     image: '/athlete/kartik2.jpeg',
   },
    {
-    name: 'Poornima Tharu',
+    name: 'Purnima Tharu',
     image: '/logo.jpeg',
   },
    {

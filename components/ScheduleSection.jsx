@@ -37,7 +37,7 @@ const scheduleDataA = [
     },
     {
       location: 'Shankar Mandir Compound, Umelman, Vasai (W)',
-      days: { saturday: '5:30PM - 7:00PM', sunday: '5:30PM - 7:00PM' },
+      days: { saturday: '5:00PM - 6:30PM', sunday: '5:30PM - 7:00PM' },
       instructor: 'Sensei Arjun Tharu',
     },
     {

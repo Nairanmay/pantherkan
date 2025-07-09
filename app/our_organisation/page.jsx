@@ -37,7 +37,7 @@ export default function AboutPage() {
             <h2 className="text-2xl font-bold mb-4">Our Legacy</h2>
             <p className="text-gray-700 text-lg leading-relaxed">
               Since our establishment in 2015, Black Pantherkan has grown into one of the most recognized sports 
-              and martial arts organizations in the region. With over 20 active training centers across Vasai-Naigaon, 
+              and martial arts organizations in the region. With over 20 active training centers across Maharashtra, 
               we have nurtured thousands of athletes, instilling in them the values of discipline, resilience, and respect.
             </p>
           </div>
@@ -221,7 +221,7 @@ export default function AboutPage() {
   <div className="relative z-20 text-center px-6 py-20 max-w-4xl mx-auto">
     <h2 className="text-3xl font-bold mb-4">Our Presence</h2>
     <p className="text-lg">
-      We are proud to have a strong presence across Maharashtra, especially in the Vasai-Naigaon region
+      We are proud to have a strong presence across India, especially in the Maharashtra region
       with over 20 active martial arts and sports classes. Black Pantherkan is not just an academy—it’s
       a movement empowering the next generation of champions.
     </p>
@@ -242,7 +242,7 @@ export default function AboutPage() {
       <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
         <h3 className="text-xl font-semibold mb-2">Strong Regional Presence</h3>
         <p className="text-gray-600">
-          With over 20 training centers across Vasai–Naigaon and widespread influence in Maharashtra, 
+          With over 20 training centers across Maharashtra and widespread influence in Maharashtra, 
           we are deeply rooted in the local community and growing every year.
         </p>
       </div>
