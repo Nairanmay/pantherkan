@@ -201,11 +201,11 @@ export default function AboutPage() {
       <div className="bg-gray-50 p-6 rounded-xl shadow text-left">
         <h3 className="text-xl font-semibold mb-2">WPKF Referees & Judges</h3>
         <p className="text-gray-600">
-         Huge team of highly trained judges and refrees under the standards of Word PantherKan Federtion.
+         Huge team of highly trained judges and refrees under the standards of  World Pantherkan Federation.
         </p>
       </div>
     </div>
-  </div>
+  </div>  
 </section>
 
 
