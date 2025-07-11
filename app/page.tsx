@@ -64,7 +64,7 @@ useEffect(() => {
   </div>
 
   {/* Foreground Content */}
-  <div className="relative z-20 bg-opacity-50 p-6 sm:p-8 rounded max-w-2xl w-full">
+  <div className="relative z-20 bg-opacity-50 p-6 sm:p-8 rounded max-w-2xl w-full ">
     <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold mb-4">
       Work Harder, Get Stronger
     </h1>

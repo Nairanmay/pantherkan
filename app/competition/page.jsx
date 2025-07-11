@@ -1,8 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState,useEffect} from 'react';
 import Image from 'next/image';
-
+import { usePathname } from 'next/navigation';
 const compData = [
   {
     year: '2021',
@@ -133,26 +133,40 @@ const compData = [
 //     ],
 //   },
 ];
-
 export default function CompetitionGalleryPage() {
+  const pathname = usePathname();
   const [selectedComp, setSelectedComp] = useState(null);
   const [modalImage, setModalImage] = useState(null);
+  const [showAnimations, setShowAnimations] = useState(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShowAnimations(true); // Trigger animations after slight delay
+    }, 600); // 100ms is enough for most paint/render
+
+    return () => clearTimeout(timeout);
+  }, [pathname]);
 
   return (
-    <div className="min-h-screen bg-gray-100 px-2 py-8 sm:px-4 md:px-6">
+    <div className="bg-[#F2F0EF] min-h-screen">
       {!selectedComp ? (
         <>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800 mb-8">
-            Competition<span className="text-red-600"> Gallery</span>
-          </h1>
+          <section className="w-full h-[200px] bg-[#807E7E] pt-24 pb-6 rounded-lg">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800">
+              Competition<span className="text-red-600"> Gallery</span>
+            </h1>
+          </section>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 pt-6 px-4 py-8 sm:px-6">
             {compData.map((comp, index) => (
-              <div
-                key={index}
-                onClick={() => setSelectedComp(comp)}
-                className="bg-white shadow-md rounded-xl overflow-hidden cursor-pointer hover:shadow-xl transition transform hover:scale-105"
-              >
+            <div
+  key={index}
+  onClick={() => setSelectedComp(comp)}
+  className={`bg-[#EBEBEB] shadow-md rounded-xl overflow-hidden cursor-pointer hover:shadow-xl transition transform hover:scale-105 ${
+    showAnimations ? 'fade-in' : ''
+  }`}
+  style={showAnimations ? { animationDelay: `${index * 0.1}s` } : {}}
+>
                 <div className="relative w-full aspect-[4/3]">
                   <Image
                     src={comp.images[0]}
@@ -160,32 +174,50 @@ export default function CompetitionGalleryPage() {
                     fill
                     className="object-cover rounded-t-xl"
                     sizes="(max-width: 768px) 100vw, 33vw"
-                    priority={index < 2}
                   />
                 </div>
-                <div className="p-3 sm:p-4">
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-800">{comp.title}</h3>
-                  <p className="text-sm text-gray-500">{comp.year}</p>
+
+                <div className="p-4">
+                  <h3
+                    className={`text-base sm:text-lg font-semibold text-gray-800 ${
+                      showAnimations ? 'slide-in-text slide-in-delay-1' : ''
+                    }`}
+                  >
+                    {comp.title}
+                  </h3>
+                  <p
+                    className={`text-sm text-gray-600 mt-1 ${
+                      showAnimations ? 'slide-in-text slide-in-delay-2' : ''
+                    }`}
+                  >
+                    {comp.year}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
         </>
       ) : (
-        <div>
+        <>
           {/* Back Button */}
-          <button
-            className="mb-6 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition text-sm sm:text-base"
-            onClick={() => setSelectedComp(null)}
-          >
-            ← Back
-          </button>
+  <div className="fixed top-24 left-4 z-50">
+  <button
+    onClick={() => setSelectedComp(null)}
+    className="relative group overflow-hidden px-5 py-2 rounded shadow-lg bg-black text-white text-sm sm:text-base"
+  >
+    <span className="absolute inset-0 bg-red-600 transform -translate-x-full group-hover:translate-x-0 transition duration-300 ease-in-out z-0" />
+    <span className="relative z-10">← Back</span>
+  </button>
+</div>
 
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-800 mb-6 text-center">
+
+          {/* Selected Competition Gallery */}
+          <section className="w-full h-[200px] bg-[#807E7E] pt-24 pb-6 rounded-xl" >
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800">
             {selectedComp.title} ({selectedComp.year})
           </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+          </section>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 pt-4 px-4 py-8 sm:px-6">
             {selectedComp.images.map((src, index) => (
               <div
                 key={index}
@@ -201,17 +233,17 @@ export default function CompetitionGalleryPage() {
               </div>
             ))}
           </div>
-        </div>
+        </>
       )}
 
-      {/* Image Modal */}
+      {/* Modal View */}
       {modalImage && (
         <div
-          className="fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center px-2 sm:px-4"
+          className="fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center px-4"
           onClick={() => setModalImage(null)}
         >
           <div
-            className="relative max-w-full sm:max-w-3xl md:max-w-5xl w-full max-h-[90vh] overflow-auto"
+            className="relative max-w-5xl w-full max-h-[90vh] overflow-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <Image

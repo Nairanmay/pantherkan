@@ -6,7 +6,7 @@ export default function AboutPage() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
   
   return (
-    <div className="bg-white text-gray-800">
+    <div className="bg-[#F1F1F1] text-gray-800">
       {/* Hero Section */}
      <section
       ref={ref}
@@ -52,7 +52,7 @@ export default function AboutPage() {
       </section>
 
 {/* Founder Section */}
-<section id='founder' className="bg-white py-16 px-6 border-t border-gray-200">
+<section id='founder' className="bg-[#FEFEFE] py-16 px-6 border-t border-gray-200">
   <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
     
     {/* Founder Image */}
@@ -91,7 +91,7 @@ export default function AboutPage() {
 
       {/* Divisions Section */}
       {/* Divisions Section with Images */}
-<section className="bg-gray-100 py-16 px-6">
+<section className="bg-[#F1F1F1]-100 py-16 px-6">
   <div className="max-w-6xl mx-auto">
     <h2 className="text-3xl font-bold text-center mb-10">Our Divisions</h2>
     <div className="grid md:grid-cols-3 gap-8 text-center">
@@ -141,7 +141,7 @@ export default function AboutPage() {
 
 
       {/* Team & Expertise Section */}
-     <section className="py-16 px-6 bg-white border-t border-gray-200">
+     <section className="py-16 px-6 bg-[#FEFEFE] border-t border-gray-200">
   <div className="max-w-6xl mx-auto text-center">
     <h2 className="text-3xl font-bold mb-6">Our Team & Expertise</h2>
     <p className="text-lg text-gray-700 max-w-4xl mx-auto mb-8">
@@ -186,19 +186,19 @@ export default function AboutPage() {
 
     {/* Cards */}
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div className="bg-gray-50 p-6 rounded-xl shadow text-left">
+      <div className="bg-[#FAFAFA] p-6 rounded-xl shadow text-left">
         <h3 className="text-xl font-semibold mb-2">Qualified Instructors</h3>
         <p className="text-gray-600">
           Led by Dr. Biju Nair, our instructors are nationally and internationally certified with deep technical knowledge.
         </p>
       </div>
-      <div className="bg-gray-50 p-6 rounded-xl shadow text-left">
+      <div className="bg-[#FAFAFA] p-6 rounded-xl shadow text-left">
         <h3 className="text-xl font-semibold mb-2">KIO Certified Judges & Refrees</h3>
         <p className="text-gray-600">
           Judges and referees trained under the standards of Karate India Organization, representing professionalism and integrity.
         </p>
       </div>
-      <div className="bg-gray-50 p-6 rounded-xl shadow text-left">
+      <div className="bg-[#FAFAFA] p-6 rounded-xl shadow text-left">
         <h3 className="text-xl font-semibold mb-2">WPKF Referees & Judges</h3>
         <p className="text-gray-600">
          Huge team of highly trained judges and refrees under the standards of  World Pantherkan Federation.
@@ -228,7 +228,7 @@ export default function AboutPage() {
   </div>
 </section>
       {/* What Sets Us Apart Section */}
-<section className="bg-gray-50 py-16 px-6">
+<section className="bg-[#FEFEFE] py-16 px-6">
   <div className="max-w-6xl mx-auto text-center">
     <h2 className="text-3xl font-bold mb-6">What Sets Us Apart</h2>
     <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-12">
@@ -239,7 +239,7 @@ export default function AboutPage() {
     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
       
       {/* Regional Presence */}
-      <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+      <div className="bg-[#FAFAFA] p-6 rounded-xl shadow hover:shadow-lg transition">
         <h3 className="text-xl font-semibold mb-2">Strong Regional Presence</h3>
         <p className="text-gray-600">
           With over 20 training centers across Maharashtra and widespread influence in Maharashtra, 
@@ -248,7 +248,7 @@ export default function AboutPage() {
       </div>
 
       {/* Karate Blend */}
-      <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+      <div className="bg-[#FAFAFA] p-6 rounded-xl shadow hover:shadow-lg transition">
         <h3 className="text-xl font-semibold mb-2">Traditional & Sports Karate</h3>
         <p className="text-gray-600">
           Our training includes both classical Okinawan styles and modern competitive sports karate, 
@@ -257,7 +257,7 @@ export default function AboutPage() {
       </div>
 
       {/* Rifle Range */}
-      <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+      <div className="bg-[#FAFAFA] p-6 rounded-xl shadow hover:shadow-lg transition">
         <h3 className="text-xl font-semibold mb-2">Professional Rifle Shooting Range</h3>
         <p className="text-gray-600">
           Equipped with a fully professional air rifle shooting range, our students receive structured, 
@@ -266,7 +266,7 @@ export default function AboutPage() {
       </div>
 
       {/* Kickboxing National Reach */}
-      <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+      <div className="bg-[#FAFAFA] p-6 rounded-xl shadow hover:shadow-lg transition">
         <h3 className="text-xl font-semibold mb-2">National Kickboxing Presence</h3>
         <p className="text-gray-600">
           Our kickboxing athletes compete and win at the national level, representing 
@@ -279,7 +279,7 @@ export default function AboutPage() {
 </section>
 
 
-<section className="bg-gray-100 py-8 px-4">
+<section className="bg-[#F1F1F1] py-8 px-4">
   <div className="max-w-4xl mx-auto text-center mb-6">
     <h2 className="text-3xl font-bold text-gray-800 mb-2">Annual Events</h2>
     <p className="text-base text-gray-600">
