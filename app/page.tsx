@@ -29,7 +29,7 @@ useEffect(() => {
 }, []);
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-transparent">
       <Head>
         <title>Blackpantherkan Academy</title>
         <meta name="description" content="Blackpantherkan Academy - Karate, Rifle Shooting, Yoga, and more" />
@@ -70,7 +70,7 @@ useEffect(() => {
   data-aos-duration="1000"
   data-aos-delay="1000"
 >
-  <h1 className="text-2xl sm:text-4xl md:text-6xl font-extrabold mb-4 text-outline leading-snug">
+  <h1 className="text-2xl sm:text-4xl md:text-6xl font-extrabold mb-4  leading-snug">
     Work Harder, <br className="sm:hidden" /> Get Stronger
   </h1>
   <p className="text-sm sm:text-lg md:text-xl mb-6 leading-relaxed">
@@ -155,7 +155,7 @@ useEffect(() => {
       {/* Classes Section */}
 
 
-<section id="classes" className="py-20 bg-gray-50">
+<section id="classes" className="py-20 ">
   <div className="max-w-7xl mx-auto px-4">
     <h2 className="text-4xl font-bold text-center text-gray-800 mb-4">
       Our <em className="text-red-500 not-italic">Classes</em>
@@ -224,7 +224,7 @@ useEffect(() => {
       
 
       {/* founder Section */}
-      <section id="trainers" className="py-16 bg-gradient-to-br from-gray-50 to-gray-100">
+      <section id="trainers" className="py-16 ">
       <div className="container mx-auto px-4">
        <div className="max-w-4xl mx-auto text-center mb-10">
   <h2 className="text-4xl font-bold text-gray-800 uppercase tracking-wider relative inline-block font-roboto">

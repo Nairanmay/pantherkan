@@ -54,9 +54,9 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 relative">
+    <div className="min-h-screen">
       {/* Contact Section */}
-      <section className="bg-gradient-to-br from-gray-100 to-gray-200 py-14 sm:py-20">
+      <section className="py-14 sm:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-800">

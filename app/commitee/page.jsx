@@ -75,7 +75,7 @@ const commissionMembers = [
 
 export default function CommitteePage() {
   return (
-   <div className="bg-gray-100 min-h-full">
+   <div className=" min-h-full">
 
 <section className="relative w-full  pb-24">
   {/* 🔷 Parallax Heading Section */}
@@ -159,7 +159,7 @@ export default function CommitteePage() {
 
 
 
- <section id="comission" className="relative w-full py-4 bg-gray-100 overflow-hidden">
+ <section id="comission" className="relative w-full py-4">
   {/* 🔷 COMMISSION Parallax Banner */}
   <div
     className="relative w-full h-[290px] bg-fixed bg-center bg-cover bg-no-repeat py-20"

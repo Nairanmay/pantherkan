@@ -162,7 +162,7 @@ function ScheduleTable({ programTitle, scheduleData }) {
   );
 
   return (
-    <section className="py-16 bg-white border-t border-gray-200" id={`${programTitle.toLowerCase()}-schedule`}>
+    <section className="py-16 border-gray-200" id={`${programTitle.toLowerCase()}-schedule`}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-gray-800 uppercase">
@@ -234,8 +234,8 @@ function ScheduleTable({ programTitle, scheduleData }) {
 
 export default function SchedulePage() {
   return (
-    <div className="bg-gray-50">
-      <header className="py-20 text-center bg-white border-b border-gray-200 px-4">
+    <div className="">
+      <header className="py-20 text-center  border-gray-200 px-4">
         <h1 className="text-5xl font-bold text-gray-800">
           Classes <span className="text-red-600">Schedule</span>
         </h1>
@@ -243,7 +243,7 @@ export default function SchedulePage() {
           Below is the schedule for our regular training programs. For extra training sessions, contact your instructor.
         </p>
       </header>
-
+<hr />
       <div id="Karate-schedule">
         <ScheduleTable programTitle="Karate" scheduleData={scheduleDataA} />
       </div>

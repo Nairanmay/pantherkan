@@ -8,7 +8,7 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen">
       <Head>
         <title>Blackpantherkan Academy</title>
         <meta name="description" content="Blackpantherkan Academy - Karate, Rifle Shooting, Yoga, and more" />

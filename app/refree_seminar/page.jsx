@@ -210,7 +210,7 @@ export default function CompetitionGalleryPage() {
 
   
   return (
-    <div className="min-h-screen bg-[#F2F0EF]">
+    <div className="min-h-screen bg-transparent">
       {!selectedComp ? (
         <>
          <section className="w-full h-[200px] bg-[#807E7E] pt-24 pb-6 rounded-lg"

@@ -170,3 +170,14 @@ root {
     width: 100%;
   }
 }
+@layer base {
+  body {
+    background-image: url('/textures/t2.webp'); /* ✅ Use a small texture for performance */
+    background-repeat: repeat; /* ✅ Repeat since it's a small texture */
+    background-size: 400px 400px; /* ✅ Matches image size */
+    background-position: top left;
+    background-attachment: fixed; /* Parallax effect */
+    margin: 0;
+    padding: 0;
+  }
+}

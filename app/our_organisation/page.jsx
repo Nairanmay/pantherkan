@@ -6,7 +6,7 @@ export default function AboutPage() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
   
   return (
-    <div className="bg-[#F1F1F1] text-gray-800">
+    <div className=" text-gray-800">
       {/* Hero Section */}
      <section
       ref={ref}
@@ -58,7 +58,7 @@ export default function AboutPage() {
       </section>
 
 {/* Founder Section */}
-<section id='founder' className="bg-[#FEFEFE] py-16 px-6 border-t border-gray-200">
+<section id='founder' className=" py-16 px-6 border-t border-gray-200">
   <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
     
     {/* Founder Image */}
@@ -148,7 +148,7 @@ export default function AboutPage() {
 
 
       {/* Team & Expertise Section */}
-     <section className="py-16 px-6 bg-[#FEFEFE] border-t border-gray-200">
+     <section className="py-16 px-6  border-t border-gray-200">
   <div className="max-w-6xl mx-auto text-center">
     <h2 className="text-3xl font-bold mb-6">Our Team & Expertise</h2>
     <p className="text-lg text-gray-700 max-w-4xl mx-auto mb-8">
@@ -236,7 +236,7 @@ export default function AboutPage() {
   </div>
 </section>
       {/* What Sets Us Apart Section */}
-<section className="bg-[#FEFEFE] py-16 px-6">
+<section className=" py-16 px-6">
   <div className="max-w-6xl mx-auto text-center">
     <h2 className="text-3xl font-bold mb-6">What Sets Us Apart</h2>
     <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-12">
@@ -287,7 +287,7 @@ export default function AboutPage() {
 </section>
 
 
-<section className="bg-[#F1F1F1] py-8 px-4">
+<section className=" py-8 px-4">
   <div className="max-w-4xl mx-auto text-center mb-6">
     <h2 className="text-3xl font-bold text-gray-800 mb-2">Annual Events</h2>
     <p className="text-base text-gray-600">
