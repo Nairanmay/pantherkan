@@ -36,7 +36,7 @@ export default function AboutPage() {
       <section className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div  data-aos="zoom-in-right"data-aos-duration="900"  // optional: duration in ms
-             data-aos-delay="1000">
+             data-aos-delay="700">
             <h2 className="text-2xl font-bold mb-4">Our Legacy</h2>
             <p className="text-gray-700 text-lg leading-relaxed">
               Since our establishment in 2015, Black Pantherkan has grown into one of the most recognized sports 
@@ -45,7 +45,7 @@ export default function AboutPage() {
             </p>
           </div >
          <div data-aos="zoom-in-left"data-aos-duration="900"  // optional: duration in ms
-             data-aos-delay="1000">
+             data-aos-delay="700">
           <Image
             src="/flag.webp" // Replace with your actual logo path
             alt="Black Pantherkan Logo"
