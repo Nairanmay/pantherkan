@@ -64,19 +64,21 @@ useEffect(() => {
   </div>
 
   {/* Foreground Content */}
- <div
-  className="relative z-20 bg-opacity-50 p-6 sm:p-8 rounded max-w-2xl w-full"
+<div
+  className="relative z-20 bg-opacity-50 p-4 sm:p-6 md:p-8 rounded max-w-2xl w-full text-center"
   data-aos="zoom-in"
-  data-aos-duration="1000"  // optional: duration in ms
-  data-aos-delay="1000"      // optional: delay in ms
+  data-aos-duration="1000"
+  data-aos-delay="1000"
 >
-  <h1 className="text-2xl sm:text-4xl md:text-6xl font-extrabold mb-4 text-outline">
-    Work Harder, Get Stronger
+  <h1 className="text-2xl sm:text-4xl md:text-6xl font-extrabold mb-4 text-outline leading-snug">
+    Work Harder, <br className="sm:hidden" /> Get Stronger
   </h1>
-  <p className="text-base sm:text-lg md:text-xl mb-6 ">Easy with our Team</p>
+  <p className="text-sm sm:text-lg md:text-xl mb-6 leading-relaxed">
+    Easy with our Team
+  </p>
   <Link
     href="/contacts"
-    className="inline-block bg-red-600 text-white px-6 py-3 rounded-full text-sm sm:text-base hover:bg-red-700 transition"
+    className="inline-block bg-red-600 text-white px-5 py-3 rounded-full text-sm sm:text-base md:text-lg hover:bg-red-700 transition w-auto"
   >
     Become a Member
   </Link>
