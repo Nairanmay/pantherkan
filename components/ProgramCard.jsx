@@ -7,8 +7,10 @@ export default function ProgramCard({ program, onClick }) {
     <div
       onClick={onClick}
       className="cursor-pointer bg-white rounded-2xl shadow-md hover:shadow-xl transition transform hover:scale-105 overflow-hidden"
+      data-aos="fade-in"
     >
-      <div className="relative w-full h-56">
+      <div className="relative w-full h-56"
+      >
         <Image
           src={program.image}
           alt={program.title}

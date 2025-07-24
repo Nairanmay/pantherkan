@@ -21,8 +21,10 @@ export default function AboutPage() {
           inView ? 'opacity-100 scale-100' : 'opacity-0 scale-90'
         }`}
       >
-        <h1 className="text-4xl font-bold mb-4">About Black Pantherkan</h1>
-        <p className="text-lg leading-relaxed">
+        <h1 className="text-4xl font-bold mb-4" data-aos="fade-down"data-aos-duration="900"  // optional: duration in ms
+             data-aos-delay="1000">About Black Pantherkan</h1>
+        <p className="text-lg leading-relaxed" data-aos="fade-down"data-aos-duration="900"  // optional: duration in ms
+             data-aos-delay="1000">
           Black Pantherkan is a premier sports and martial arts academy founded in 2015 by Dr. Biju Nair.
           We are dedicated to promoting physical excellence, discipline, and sportsmanship across Maharashtra.
         </p>
@@ -33,14 +35,17 @@ export default function AboutPage() {
       {/* Legacy Section */}
       <section className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div>
+          <div  data-aos="zoom-in-right"data-aos-duration="900"  // optional: duration in ms
+             data-aos-delay="1000">
             <h2 className="text-2xl font-bold mb-4">Our Legacy</h2>
             <p className="text-gray-700 text-lg leading-relaxed">
               Since our establishment in 2015, Black Pantherkan has grown into one of the most recognized sports 
               and martial arts organizations in the region. With over 20 active training centers across Maharashtra, 
               we have nurtured thousands of athletes, instilling in them the values of discipline, resilience, and respect.
             </p>
-          </div>
+          </div >
+         <div data-aos="zoom-in-left"data-aos-duration="900"  // optional: duration in ms
+             data-aos-delay="1000">
           <Image
             src="/flag.webp" // Replace with your actual logo path
             alt="Black Pantherkan Logo"
@@ -48,6 +53,7 @@ export default function AboutPage() {
             height={500}
             className="rounded-xl shadow-lg"
           />
+          </div>
         </div>
       </section>
 
@@ -56,17 +62,18 @@ export default function AboutPage() {
   <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
     
     {/* Founder Image */}
-    <Image
+   <div data-aos="zoom-in-right"data-aos-duration="900">
+   <Image
       src="/biju_nair.jpg" // Replace with actual path to founder's photo
       alt="Grandmaster Dr. Biju Nair"
       width={400}
       height={500}
       className="rounded-xl shadow-lg object-cover mx-auto"
     />
-
+    </div>
     {/* Founder Text */}
-    <div>
-      <h2 className="text-3xl font-bold mb-4">Our Founder</h2>
+    <div data-aos="zoom-in-left"data-aos-duration="900">
+      <h2 className="text-3xl font-bold mb-4 typing-effect">Our Founder</h2>
       <h3 className="text-xl font-semibold text-gray-800 mb-2">Grandmaster Dr. Biju Nair</h3>
       <p className="text-gray-700 text-lg leading-relaxed mb-4">
         Grandmaster Dr. Biju Nair is an Indian martial artist and the visionary founder of the Black Pantherkan Association of Sports and Martial Arts. 
@@ -97,7 +104,7 @@ export default function AboutPage() {
     <div className="grid md:grid-cols-3 gap-8 text-center">
       
       {/* Karate Division */}
-      <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+      <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition"data-aos="fade-up"data-aos-duration="900" data-aos-delay="100">
         <Image
           src="/gojulogo.jpg" // Replace with your actual image path
           alt="Goju Ryu Sports Karate Do Association"
@@ -110,7 +117,7 @@ export default function AboutPage() {
       </div>
 
       {/* Air Rifle Division */}
-      <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+      <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition"data-aos="fade-up"data-aos-duration="900" data-aos-delay="200">
         <Image
           src="/riflelogo.png" // Replace with your actual image path
           alt="Black Pantherkan Air Rifle Association"
@@ -123,7 +130,7 @@ export default function AboutPage() {
       </div>
 
       {/* Kickboxing Division */}
-      <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+      <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition"data-aos="fade-up"data-aos-duration="900" data-aos-delay="300">
         <Image
           src="/kickboxinglogo.png" // Replace with your actual image path
           alt="Black Pantherkan Kickboxing Association"
@@ -185,20 +192,20 @@ export default function AboutPage() {
 
 
     {/* Cards */}
-    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"data-aos="fade-up"data-aos-duration="900" data-aos-delay="100">
       <div className="bg-[#FAFAFA] p-6 rounded-xl shadow text-left">
         <h3 className="text-xl font-semibold mb-2">Qualified Instructors</h3>
         <p className="text-gray-600">
           Led by Dr. Biju Nair, our instructors are nationally and internationally certified with deep technical knowledge.
         </p>
       </div>
-      <div className="bg-[#FAFAFA] p-6 rounded-xl shadow text-left">
+      <div className="bg-[#FAFAFA] p-6 rounded-xl shadow text-left"data-aos="fade-up"data-aos-duration="900" data-aos-delay="200">
         <h3 className="text-xl font-semibold mb-2">KIO Certified Judges & Refrees</h3>
         <p className="text-gray-600">
           Judges and referees trained under the standards of Karate India Organization, representing professionalism and integrity.
         </p>
       </div>
-      <div className="bg-[#FAFAFA] p-6 rounded-xl shadow text-left">
+      <div className="bg-[#FAFAFA] p-6 rounded-xl shadow text-left"data-aos="fade-up"data-aos-duration="900" data-aos-delay="300">
         <h3 className="text-xl font-semibold mb-2">WPKF Referees & Judges</h3>
         <p className="text-gray-600">
          Huge team of highly trained judges and refrees under the standards of  World Pantherkan Federation.
@@ -218,7 +225,8 @@ export default function AboutPage() {
   <div className="absolute inset-0 bg-black/60 z-10" />
 
   {/* Content */}
-  <div className="relative z-20 text-center px-6 py-20 max-w-4xl mx-auto">
+  <div className="relative z-20 text-center px-6 py-20 max-w-4xl mx-auto"data-aos="fade-in"data-aos-duration="900"  // optional: duration in ms
+             data-aos-delay="500">
     <h2 className="text-3xl font-bold mb-4">Our Presence</h2>
     <p className="text-lg">
       We are proud to have a strong presence across India, especially in the Maharashtra region
@@ -239,7 +247,7 @@ export default function AboutPage() {
     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
       
       {/* Regional Presence */}
-      <div className="bg-[#FAFAFA] p-6 rounded-xl shadow hover:shadow-lg transition">
+      <div className="bg-[#FAFAFA] p-6 rounded-xl shadow hover:shadow-lg transition"data-aos="fade-up"data-aos-duration="900" data-aos-delay="100">
         <h3 className="text-xl font-semibold mb-2">Strong Regional Presence</h3>
         <p className="text-gray-600">
           With over 20 training centers across Maharashtra and widespread influence in Maharashtra, 
@@ -248,7 +256,7 @@ export default function AboutPage() {
       </div>
 
       {/* Karate Blend */}
-      <div className="bg-[#FAFAFA] p-6 rounded-xl shadow hover:shadow-lg transition">
+      <div className="bg-[#FAFAFA] p-6 rounded-xl shadow hover:shadow-lg transition"data-aos="fade-up"data-aos-duration="900" data-aos-delay="200">
         <h3 className="text-xl font-semibold mb-2">Traditional & Sports Karate</h3>
         <p className="text-gray-600">
           Our training includes both classical Okinawan styles and modern competitive sports karate, 
@@ -257,7 +265,7 @@ export default function AboutPage() {
       </div>
 
       {/* Rifle Range */}
-      <div className="bg-[#FAFAFA] p-6 rounded-xl shadow hover:shadow-lg transition">
+      <div className="bg-[#FAFAFA] p-6 rounded-xl shadow hover:shadow-lg transition"data-aos="fade-up"data-aos-duration="900" data-aos-delay="300">
         <h3 className="text-xl font-semibold mb-2">Professional Rifle Shooting Range</h3>
         <p className="text-gray-600">
           Equipped with a fully professional air rifle shooting range, our students receive structured, 
@@ -266,7 +274,7 @@ export default function AboutPage() {
       </div>
 
       {/* Kickboxing National Reach */}
-      <div className="bg-[#FAFAFA] p-6 rounded-xl shadow hover:shadow-lg transition">
+      <div className="bg-[#FAFAFA] p-6 rounded-xl shadow hover:shadow-lg transition"data-aos="fade-up"data-aos-duration="900" data-aos-delay="400">
         <h3 className="text-xl font-semibold mb-2">National Kickboxing Presence</h3>
         <p className="text-gray-600">
           Our kickboxing athletes compete and win at the national level, representing 
@@ -289,7 +297,7 @@ export default function AboutPage() {
 
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
     {/* Training & Grading Camp */}
-    <div className="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+    <div className="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden"data-aos="fade-up"data-aos-duration="900" data-aos-delay="100">
       <div className="w-full aspect-[4/3] relative">
         <img
           src="/bg3.webp"
@@ -312,7 +320,7 @@ export default function AboutPage() {
     </div>
 
     {/* National Pantherkan Cup */}
-    <div className="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+    <div className="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden"data-aos="fade-up"data-aos-duration="900" data-aos-delay="200">
       <div className="w-full aspect-[4/3] relative">
         <img
           src="/bg7.JPG"

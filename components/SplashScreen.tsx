@@ -15,7 +15,7 @@ export default function SplashScreen() {
           style={{ animation: 'spin 3s linear infinite' }}
         />
       </div>
-      <h1 className="mt-6 text-lg sm:text-xl md:text-2xl font-bold text-gray-800 tracking-wide text-center">
+      <h1 className="mt-6 text-lg sm:text-xl md:text-2xl font-extrabold text-gray-800 tracking-wide text-center font-abolition">
          BLACK PANTHERKAN
       </h1>
     </div>

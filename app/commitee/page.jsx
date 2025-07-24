@@ -85,7 +85,7 @@ export default function CommitteePage() {
   >
     <div className="absolute inset-0 bg-black/45 z-0" />
     <div className="relative z-10 text-center max-w-3xl mx-auto px-4">
-      <h2 className="text-4xl md:text-5xl font-bold text-white">
+      <h2 className="text-4xl md:text-5xl font-bold text-white pt-8 pb-8">
         Our <span className="text-[red]">Committee</span>
       </h2>
       <p className="mt-4 text-lg text-gray-200">
@@ -100,9 +100,12 @@ export default function CommitteePage() {
   </div>
 
   {/* 🔷 Pyramid Layout */}
-<div className="relative z-10 flex flex-col items-center gap-12 pt-6 pb-0 px-4 sm:px-6 lg:px-8">
+<div className="relative z-10 flex flex-col items-center gap-12 pt-6 pb-0 px-4 sm:px-6 lg:px-8"
+ 
+>
           {/* Top Row – 3 Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 w-full max-w-6xl">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 w-full max-w-6xl" data-aos="zoom-in-up"data-aos-duration="900"  // optional: duration in ms
+  data-aos-delay="1000"   >
             {committeeMembers.slice(0, 3).map((member, index) => (
               <div
                 key={index}
@@ -126,7 +129,7 @@ export default function CommitteePage() {
           </div>
 
           {/* Bottom Row – 2 Centered Cards */}
-          <div className="flex flex-col sm:flex-row justify-center gap-10 w-full max-w-3xl">
+          <div className="flex flex-col sm:flex-row justify-center gap-10 w-full max-w-3xl" data-aos="zoom-in-up"data-aos-duration="900">
             {committeeMembers.slice(3, 5).map((member, index) => (
               <div
                 key={index}
@@ -156,7 +159,7 @@ export default function CommitteePage() {
 
 
 
- <section id="comission" className="relative w-full py-20 bg-gray-100 overflow-hidden">
+ <section id="comission" className="relative w-full py-4 bg-gray-100 overflow-hidden">
   {/* 🔷 COMMISSION Parallax Banner */}
   <div
     className="relative w-full h-[290px] bg-fixed bg-center bg-cover bg-no-repeat py-20"
@@ -164,7 +167,7 @@ export default function CommitteePage() {
   >
     <div className="absolute inset-0 bg-black/45 z-0" />
     <div className="relative z-10 text-center max-w-3xl mx-auto px-4">
-      <h2 className="text-4xl md:text-5xl font-bold text-white">
+      <h2 className="text-4xl md:text-5xl font-bold text-white pt-6 pb-6">
         Our <span className="text-[red]">Commission</span> Members
       </h2>
       <p className="mt-4 text-lg text-gray-200">
@@ -179,11 +182,11 @@ export default function CommitteePage() {
   </div>
 
   {/* 🔷 Pyramid Layout */}
- <div className="relative z-10 flex flex-col items-center gap-16 pt-24 pb-12 px-4 sm:px-6 lg:px-8">
+ <div className="relative z-10 flex flex-col items-center gap-16 pt-12 pb-12 px-4 sm:px-6 lg:px-8">
 
     
     {/* Top Row – 3 Cards */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 w-full max-w-6xl">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 w-full max-w-6xl"data-aos="zoom-in-up"data-aos-duration="900">
       {commissionMembers.slice(0, 3).map((member, index) => (
         <div
           key={index}
@@ -206,9 +209,9 @@ export default function CommitteePage() {
       ))}
     </div>
 
-    {/* Bottom Row – 2 Centered Cards */}
+
 {/* Bottom Row – 1 Centered Card */}
-<div className="flex justify-center w-full max-w-6xl">
+<div className="flex justify-center w-full max-w-6xl"data-aos="zoom-in-up"data-aos-duration="900">
   {commissionMembers.slice(3, 4).map((member, index) => (
     <div
       key={index}

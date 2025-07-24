@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import ClientLayout from '@/components/ClientLayout';
-import Footer from '@/components/Footer'; // Your footer component
+import Footer from '@/components/Footer';
+import AOSProvider from '@/components/AOSprovider';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -27,13 +28,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}>
-        {/* Main content expands to fill screen */}
-        <main className="flex-grow">
-          <ClientLayout>{children}</ClientLayout>
-        </main>
-
-        {/* Footer stays at bottom */}
-        <Footer />
+        <AOSProvider>
+          <main className="flex-grow">
+            <ClientLayout>{children}</ClientLayout>
+          </main>
+          <Footer />
+        </AOSProvider>
       </body>
     </html>
   );

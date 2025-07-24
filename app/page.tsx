@@ -64,18 +64,24 @@ useEffect(() => {
   </div>
 
   {/* Foreground Content */}
-  <div className="relative z-20 bg-opacity-50 p-6 sm:p-8 rounded max-w-2xl w-full ">
-    <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold mb-4">
-      Work Harder, Get Stronger
-    </h1>
-    <p className="text-base sm:text-lg md:text-xl mb-6">Easy with our Team</p>
-    <Link
-      href="/contacts"
-      className="inline-block bg-red-600 text-white px-6 py-3 rounded-full text-sm sm:text-base hover:bg-red-700 transition"
-    >
-      Become a Member
-    </Link>
-  </div>
+ <div
+  className="relative z-20 bg-opacity-50 p-6 sm:p-8 rounded max-w-2xl w-full"
+  data-aos="zoom-in"
+  data-aos-duration="1000"  // optional: duration in ms
+  data-aos-delay="1000"      // optional: delay in ms
+>
+  <h1 className="text-2xl sm:text-4xl md:text-6xl font-extrabold mb-4 text-outline">
+    Work Harder, Get Stronger
+  </h1>
+  <p className="text-base sm:text-lg md:text-xl mb-6 ">Easy with our Team</p>
+  <Link
+    href="/contacts"
+    className="inline-block bg-red-600 text-white px-6 py-3 rounded-full text-sm sm:text-base hover:bg-red-700 transition"
+  >
+    Become a Member
+  </Link>
+</div>
+
 
   {/* Manual Controls */}
   <button
@@ -106,7 +112,10 @@ useEffect(() => {
       Visit our social channels to explore more of our activities.
     </p>
 
-    <div className="flex justify-center space-x-6">
+    <div className="flex justify-center space-x-6"
+    data-aos="zoom-in-up"
+    data-aos-duration="800"  // optional: duration in ms
+    >
       <a
         href="https://www.facebook.com/people/Black-Pantherkan-Academy-Of-Sports-Martial-Arts/100063680874664/"
         target="_blank"
@@ -153,7 +162,10 @@ useEffect(() => {
       Choose from our expert-led training programs designed for all skill levels.
     </p>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+    data-aos="fade-up"
+    data-aos-delay="400"
+    >
       {[
         {
           title: 'Karate Classes',
@@ -213,7 +225,7 @@ useEffect(() => {
       <section id="trainers" className="py-16 bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="container mx-auto px-4">
        <div className="max-w-4xl mx-auto text-center mb-10">
-  <h2 className="text-4xl font-bold text-gray-800 uppercase tracking-wider relative inline-block">
+  <h2 className="text-4xl font-bold text-gray-800 uppercase tracking-wider relative inline-block font-roboto">
     FOUNDER
     <span className="block w-20 h-1 bg-indigo-600 mx-auto mt-2 rounded"></span>
   </h2>

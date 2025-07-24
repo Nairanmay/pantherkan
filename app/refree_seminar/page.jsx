@@ -3,6 +3,8 @@
 import { useState,useEffect} from 'react';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const compData = [
   {
     year: '2024',
@@ -191,40 +193,49 @@ const compData = [
 
 ];
 
+
 export default function CompetitionGalleryPage() {
   const pathname = usePathname();
   const [selectedComp, setSelectedComp] = useState(null);
   const [modalImage, setModalImage] = useState(null);
-  const [showAnimations, setShowAnimations] = useState(false);
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      setShowAnimations(true); // Trigger animations after slight delay
-    }, 600); // 100ms is enough for most paint/render
-
-    return () => clearTimeout(timeout);
+    AOS.init({
+      duration: 1000,
+      once: false,     // animate every time
+      mirror: false,   // disable animate out when scrolling back
+    });
+    AOS.refresh();     // refresh on first load
   }, [pathname]);
 
+  
   return (
-    <div className="min-h-screen bg-[#F2F0EF] ">
+    <div className="min-h-screen bg-[#F2F0EF]">
       {!selectedComp ? (
         <>
-           <section className="w-full h-[200px] bg-[#807E7E] pt-24 pb-6 rounded-lg">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800">
-              Competition<span className="text-red-600"> Gallery</span>
-            </h1>
-          </section>
-         
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 pt-6 px-4 py-8 sm:px-6">
+         <section className="w-full h-[200px] bg-[#807E7E] pt-24 pb-6 rounded-lg"
+         data-aos="fade-down"
+         >
+  
+  <h1
+    data-aos="fade-down"
+    className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800"
+  >
+    Competition<span className="text-red-600"> Gallery</span>
+  </h1>
+</section>
+
+          <div
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 pt-6 px-4 py-8 sm:px-6"
+            data-aos="fade-up"
+          >
             {compData.map((comp, index) => (
-             <div
-  key={index}
-  onClick={() => setSelectedComp(comp)}
-  className={`bg-[#EBEBEB] shadow-md rounded-xl overflow-hidden cursor-pointer hover:shadow-xl transition transform hover:scale-105 ${
-    showAnimations ? 'fade-in' : ''
-  }`}
-  style={showAnimations ? { animationDelay: `${index * 0.1}s` } : {}}
->
+              <div
+                key={index}
+                onClick={() => setSelectedComp(comp)}
+                className="bg-[#EBEBEB] shadow-md rounded-xl overflow-hidden cursor-pointer hover:shadow-xl transition transform hover:scale-105"
+              
+              >
                 <div className="relative w-full aspect-[4/3]">
                   <Image
                     src={comp.images[0]}
@@ -236,7 +247,9 @@ export default function CompetitionGalleryPage() {
                   />
                 </div>
                 <div className="p-3 sm:p-4">
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-800">{comp.title}</h3>
+                  <h3 className="text-base sm:text-lg font-semibold text-gray-800">
+                    {comp.title}
+                  </h3>
                   <p className="text-sm text-gray-500">{comp.year}</p>
                 </div>
               </div>
@@ -245,22 +258,25 @@ export default function CompetitionGalleryPage() {
         </>
       ) : (
         <div>
-          {/* Back Button */}
           <div className="fixed top-24 left-4 z-50">
-  <button
-    onClick={() => setSelectedComp(null)}
-    className="relative group overflow-hidden px-5 py-2 rounded shadow-lg bg-black text-white text-sm sm:text-base"
-  >
-    <span className="absolute inset-0 bg-red-600 transform -translate-x-full group-hover:translate-x-0 transition duration-300 ease-in-out z-0" />
-    <span className="relative z-10">← Back</span>
-  </button>
-</div>
+            <button
+              onClick={() => setSelectedComp(null)}
+              className="relative group overflow-hidden px-5 py-2 rounded shadow-lg bg-black text-white text-sm sm:text-base"
+            >
+              <span className="absolute inset-0 bg-red-600 transform -translate-x-full group-hover:translate-x-0 transition duration-300 ease-in-out z-0" />
+              <span className="relative z-10">← Back</span>
+            </button>
+          </div>
 
-            <section className="w-full h-[200px] bg-[#807E7E] pt-24 pb-6 rounded-xl" >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800">
-            {selectedComp.title} ({selectedComp.year})
-          </h2>
-          </section>
+        <section
+  className="w-full h-[200px] bg-[#807E7E] pt-24 pb-6 rounded-xl"
+
+>
+  <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800">
+    {selectedComp.title} ({selectedComp.year})
+  </h2>
+</section>
+
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 pt-4 px-4 py-8 sm:px-6">
             {selectedComp.images.map((src, index) => (
@@ -268,6 +284,8 @@ export default function CompetitionGalleryPage() {
                 key={index}
                 onClick={() => setModalImage(src)}
                 className="relative w-full aspect-[4/3] overflow-hidden rounded-xl shadow cursor-pointer transition hover:scale-105"
+                data-aos="fade-up"
+                data-aos-delay={index * 50}
               >
                 <Image
                   src={src}
@@ -281,7 +299,6 @@ export default function CompetitionGalleryPage() {
         </div>
       )}
 
-      {/* Image Modal */}
       {modalImage && (
         <div
           className="fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center px-2 sm:px-4"
@@ -307,12 +324,6 @@ export default function CompetitionGalleryPage() {
           </div>
         </div>
       )}
-        {/* Footer */}
-      {/* <footer className="bg-black text-white py-8 text-center">
-        <div className="container mx-auto px-4">
-          <p className="text-sm">&copy; {new Date().getFullYear()} Black Pantherkan Academy. All rights reserved.</p>
-        </div>
-      </footer> */}
     </div>
   );
 }
