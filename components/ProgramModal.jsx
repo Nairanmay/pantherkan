@@ -32,7 +32,7 @@ export default function ProgramModal({ program, onClose }) {
         <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3 text-center">{program.title}</h2>
 
         {/* Description */}
-        <p className="text-gray-700 text-sm sm:text-base text-justify mb-4">{program.desc}</p>
+        <p className="text-gray-700 text-sm sm:text-base text-justify mb-4 font-crimson">{program.desc}</p>
 
         {/* Logo + Brand */}
         <div className="flex items-center justify-center gap-3 mt-6">

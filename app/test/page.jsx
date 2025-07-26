@@ -17,6 +17,10 @@ export default function FontsTest() {
       <p className="font-nclneovibes text-3xl">NCL Neovibes - The quick brown fox jumps over the lazy dog.</p>
       <p className="font-rushdriver text-3xl">Rush Driver - The quick brown fox jumps over the lazy dog.</p>
       <p className="font-shocksurgent text-3xl">Shock Surgent - The quick brown fox jumps over the lazy dog.</p>
+      <p className="font-silkscreen text-3xl">Silkscreen - The quick brown fox jumps over the lazy dog.</p><p className="font-fira text-xl">Fira Sans – The quick brown fox jumps over the lazy dog.</p>
+      <p className="font-work text-xl">Work Sans – The quick brown fox jumps over the lazy dog.</p>
+      <p className="font-crimson text-xl">Crimson Roman – The quick brown fox jumps over the lazy dog.</p>
+      <p className="font-aleo text-xl">Aleo – The quick brown fox jumps over the lazy dog.</p>    
     </div>
   );
 }

@@ -113,7 +113,7 @@ useEffect(() => {
     <h2 className=" font-merich text-4xl font-extrabold text-white mb-4 tracking-wide">
       Don’t Think, Begin Today!
     </h2>
-    <p className="text-lg text-gray-300 mb-8">
+    <p className="text-lg text-gray-300 mb-8 font-aleo">
       Visit our social channels to explore more of our activities.
     </p>
 
@@ -163,7 +163,7 @@ useEffect(() => {
     <h2 className=" font-merich text-4xl  text-center text-gray-800 mb-4">
       Our <em className="text-red-500 not-italic">Classes</em>
     </h2>
-    <p className="text-center text-gray-600 mb-12">
+    <p className="text-center text-gray-600 mb-12 font-aleo">
       Choose from our expert-led training programs designed for all skill levels.
     </p>
 
@@ -207,7 +207,7 @@ useEffect(() => {
             <h3 className=" font-bebas text-2xl font-semibold text-gray-800 group-hover:text-red-600 mb-2 transition">
               {cls.title}
             </h3>
-            <p className="text-gray-600 mb-4">{cls.desc}</p>
+            <p className="text-gray-600 mb-4 font-aleo">{cls.desc}</p>
             <Link href={cls.link} className="inline-block px-4 py-2 bg-red-600 text-white rounded-full text-sm font-medium shadow hover:bg-red-700 transition">
               View Schedule
             </Link>
@@ -253,7 +253,7 @@ useEffect(() => {
                 className="mb-3 mx-auto object-contain rounded"
               />
               <h3 className="text-lg font-semibold text-gray-800">Grandmaster Dr. Biju Nair</h3>
-              <p className="mt-1 text-sm text-gray-600">
+              <p className="mt-1 text-sm text-gray-600 font-aleo">
                 Founder and principal of <span className="font-medium">Blackpantherkan Academy</span>.
               </p>
               <Link 

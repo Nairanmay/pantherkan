@@ -168,7 +168,7 @@ function ScheduleTable({ programTitle, scheduleData }) {
           <h2 className="text-3xl font-merich text-gray-800 uppercase">
             {programTitle} <span className="text-red-600">Schedule</span>
           </h2>
-          <p className="text-gray-600 mt-2">Filter schedule by day using the buttons below.</p>
+          <p className="text-gray-600 mt-2 font-aleo">Filter schedule by day using the buttons below.</p>
         </div>
 
         <div className="flex flex-wrap justify-center gap-2 mb-6">
@@ -239,7 +239,7 @@ export default function SchedulePage() {
         <h1 className="text-5xl font-merich text-gray-800">
           Classes <span className="text-red-600">Schedule</span>
         </h1>
-        <p className="mt-4 max-w-xl mx-auto text-gray-600 text-lg">
+        <p className="mt-4 max-w-xl mx-auto text-gray-600 text-lg font-aleo">
           Below is the schedule for our regular training programs. For extra training sessions, contact your instructor.
         </p>
       </header>

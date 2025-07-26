@@ -161,14 +161,14 @@ export default function CampGalleryPage() {
                 </div>
                <div className="p-4">
                   <h3
-                    className={`text-base sm:text-lg font-semibold text-gray-800 ${
+                    className={` font-silkscreen text-base font-bold sm:text-lg  text-gray-800 ${
                       showAnimations ? 'slide-in-text slide-in-delay-1' : ''
                     }`}
                   >
                     {camp.title}
                   </h3>
                   <p
-                    className={`text-sm text-gray-600 mt-1 ${
+                    className={` font-silkscreen text-sm text-gray-600 mt-1 ${
                       showAnimations ? 'slide-in-text slide-in-delay-2' : ''
                     }`}
                   >
@@ -193,7 +193,7 @@ export default function CampGalleryPage() {
 </div>
 
            <section className="w-full h-[200px] bg-[#807E7E] pt-24 pb-2 rounded-xl" >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-merich text-center text-gray-800">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-merich text-center text-gray-800 ">
             {selectedCamp.title} ({selectedCamp.year})
           </h2>
           </section>

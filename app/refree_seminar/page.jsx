@@ -247,10 +247,10 @@ export default function CompetitionGalleryPage() {
                   />
                 </div>
                 <div className="p-3 sm:p-4">
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-800">
+                  <h3 className=" font-silkscreen text-base font-bold sm:text-lg  text-gray-800">
                     {comp.title}
                   </h3>
-                  <p className="text-sm text-gray-500">{comp.year}</p>
+                  <p className=" font-silkscreen text-sm text-gray-500">{comp.year}</p>
                 </div>
               </div>
             ))}

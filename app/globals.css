@@ -238,6 +238,30 @@ root {
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: 'fira-sans';
+  src: url('/fonts/FiraSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Work Sans';
+  src: url('/fonts/WorkSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'crimson-roman';
+  src: url('/fonts/Crimson-Roman.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Aleo';
+  src: url('/fonts/Aleo-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
 
 .font-higherjump {
   font-family: 'Higher Jump', sans-serif;
@@ -273,4 +297,19 @@ root {
 
 .font-shocksurgent {
   font-family: 'Shock Surgent', sans-serif;
+}
+.font-fira {
+  font-family: 'fira-sans', sans-serif;
+}
+
+.font-work {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.font-crimson {
+  font-family: 'crimson-roman', serif;
+}
+
+.font-aleo {
+  font-family: 'Aleo', serif;
 }

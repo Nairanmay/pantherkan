@@ -23,22 +23,22 @@ export default function AboutPage() {
       >
         <h1 className=" font-merich text-4xl  mb-4" data-aos="fade-down"data-aos-duration="900"  // optional: duration in ms
              data-aos-delay="1000">About Black Pantherkan</h1>
-        <p className="text-lg leading-relaxed" data-aos="fade-down"data-aos-duration="900"  // optional: duration in ms
+        <p className=" font-crimson text-xl leading-relaxed" data-aos="fade-down"data-aos-duration="900"  // optional: duration in ms
              data-aos-delay="1000">
           Black Pantherkan is a premier sports and martial arts academy founded in 2015 by Dr. Biju Nair.
           We are dedicated to promoting physical excellence, discipline, and sportsmanship across Maharashtra.
         </p>
       </div>
     </section>
-
+ 
 
       {/* Legacy Section */}
       <section className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div  data-aos="zoom-in-right"data-aos-duration="900"  // optional: duration in ms
              data-aos-delay="700">
-            <h2 className="text-2xl  mb-4 font-merich">Our Legacy</h2>
-            <p className="text-gray-700 text-lg leading-relaxed">
+            <h2 className="text-3xl  mb-4 font-merich">Our Legacy</h2>
+            <p className="text-gray-700 text-xl leading-relaxed font-crimson">
               Since our establishment in 2015, Black Pantherkan has grown into one of the most recognized sports 
               and martial arts organizations in the region. With over 20 active training centers across Maharashtra, 
               we have nurtured thousands of athletes, instilling in them the values of discipline, resilience, and respect.
@@ -75,19 +75,19 @@ export default function AboutPage() {
     <div data-aos="zoom-in-left"data-aos-duration="900">
       <h2 className="text-3xl font-merich mb-4 typing-effect">Our Founder</h2>
       <h3 className="text-xl font-semibold text-gray-800 mb-2">Grandmaster Dr. Biju Nair</h3>
-      <p className="text-gray-700 text-lg leading-relaxed mb-4">
+      <p className="text-gray-700 text-xl leading-relaxed mb-4 font-crimson">
         Grandmaster Dr. Biju Nair is an Indian martial artist and the visionary founder of the Black Pantherkan Association of Sports and Martial Arts. 
         He holds an esteemed <strong>8th Dan Black Belt</strong> and serves as a National Tournament Commission Member of the <strong>Karate India Organization (KIO)</strong>.
       </p>
-      <p className="text-gray-700 text-lg leading-relaxed mb-4">
+      <p className="text-gray-700 text-xl leading-relaxed mb-4 font-crimson">
         Born in Kerala, India, and later moving to Mumbai for education, Dr. Biju Nair was introduced to martial arts at the age of just 6. 
         Since then, his unwavering dedication to the art has led him to countless achievements and recognitions on national and international platforms.
       </p>
-      <p className="text-gray-700 text-lg leading-relaxed mb-4">
+      <p className="text-gray-700 text-xl leading-relaxed mb-4 font-crimson">
         Widely respected as one of the finest martial artists by senior personalities from the worlds of media and global sports, 
         he has devoted his life to empowering the next generation. Through years of perseverance, he established not only an academy but also his own recognized martial arts style.
       </p>
-      <p className="text-gray-700 text-lg leading-relaxed">
+      <p className="text-gray-700 text-xl leading-relaxed font-crimson">
         Today, Grandmaster Dr. Biju Nair continues to inspire thousands across Maharashtra and India through his leadership, discipline, and legacy in martial arts.
       </p>
     </div>
@@ -151,7 +151,7 @@ export default function AboutPage() {
      <section className="py-16 px-6  border-t border-gray-200">
   <div className="max-w-6xl mx-auto text-center">
     <h2 className="text-3xl font-merich mb-6">Our Team & Expertise</h2>
-    <p className="text-lg text-gray-700 max-w-4xl mx-auto mb-8">
+    <p className="text-xl text-gray-700 max-w-4xl mx-auto mb-8 font-crimson">
       Black Pantherkan is powered by a team of highly qualified instructors with decades of combined experience 
       in martial arts and sports coaching. Our faculty includes certified national-level trainers, and a strong panel of 
       judges and referees affiliated with the <strong>Karate India Organization (KIO)</strong> and the <strong>World Pantherkan Karate Federation (WPKF)</strong>.
@@ -169,7 +169,7 @@ export default function AboutPage() {
       className="object-contain mb-1"
     />
     <h4 className="text-lg font-semibold text-gray-800">Karate India Organization (KIO)</h4>
-    <p className="text-sm text-gray-600">
+    <p className="text-base text-gray-600 font-crimson">
       Official national governing body for Karate in India, recognized by the Indian Olympic Association.
     </p>
   </div>
@@ -184,7 +184,7 @@ export default function AboutPage() {
       className="object-contain mb-1"
     />
     <h4 className="text-lg font-semibold text-gray-800">World Pantherkan Karate Federation (WPKF)</h4>
-    <p className="text-sm text-gray-600">
+    <p className="text-base text-gray-600 font-crimson">
       An international karate organization, Parent organization of Black Pantherkan Academy of Sports and Martial Arts.
     </p>
   </div>
@@ -195,19 +195,19 @@ export default function AboutPage() {
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"data-aos="fade-up"data-aos-duration="900" data-aos-delay="100">
       <div className="bg-[#FAFAFA] p-6 rounded-xl shadow text-left">
         <h3 className="text-xl font-semibold mb-2">Qualified Instructors</h3>
-        <p className="text-gray-600">
+        <p className="text-gray-600 font-crimson text-lg">
           Led by Dr. Biju Nair, our instructors are nationally and internationally certified with deep technical knowledge.
         </p>
       </div>
       <div className="bg-[#FAFAFA] p-6 rounded-xl shadow text-left"data-aos="fade-up"data-aos-duration="900" data-aos-delay="200">
         <h3 className="text-xl font-semibold mb-2">KIO Certified Judges & Refrees</h3>
-        <p className="text-gray-600">
+        <p className="text-gray-600 font-crimson text-lg">
           Judges and referees trained under the standards of Karate India Organization, representing professionalism and integrity.
         </p>
       </div>
       <div className="bg-[#FAFAFA] p-6 rounded-xl shadow text-left"data-aos="fade-up"data-aos-duration="900" data-aos-delay="300">
         <h3 className="text-xl font-semibold mb-2">WPKF Referees & Judges</h3>
-        <p className="text-gray-600">
+        <p className="text-gray-600 font-crimson text-lg">
          Huge team of highly trained judges and refrees under the standards of  World Pantherkan Federation.
         </p>
       </div>
@@ -227,8 +227,8 @@ export default function AboutPage() {
   {/* Content */}
   <div className="relative z-20 text-center px-6 py-20 max-w-4xl mx-auto"data-aos="fade-in"data-aos-duration="900"  // optional: duration in ms
              data-aos-delay="500">
-    <h2 className="text-3xl font-merich mb-4">Our Presence</h2>
-    <p className="text-lg">
+    <h2 className="text-4xl font-merich mb-4">Our Presence</h2>
+    <p className="text-2xl font-crimson">
       We are proud to have a strong presence across India, especially in the Maharashtra region
       with over 20 active martial arts and sports classes. Black Pantherkan is not just an academy—it’s
       a movement empowering the next generation of champions.
@@ -239,7 +239,7 @@ export default function AboutPage() {
 <section className=" py-16 px-6">
   <div className="max-w-6xl mx-auto text-center">
     <h2 className="text-3xl font-merich mb-6">What Sets Us Apart</h2>
-    <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-12">
+    <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-12 font-crimson">
       Black Pantherkan is not just a martial arts academy — it's a complete ecosystem for sports and personal development, 
       combining tradition, professionalism, and regional excellence.
     </p>
@@ -249,7 +249,7 @@ export default function AboutPage() {
       {/* Regional Presence */}
       <div className="bg-[#FAFAFA] p-6 rounded-xl shadow hover:shadow-lg transition"data-aos="fade-up"data-aos-duration="900" data-aos-delay="100">
         <h3 className="text-xl font-semibold mb-2">Strong Regional Presence</h3>
-        <p className="text-gray-600">
+        <p className="text-gray-600 font-crimson text-lg">
           With over 20 training centers across Maharashtra and widespread influence in Maharashtra, 
           we are deeply rooted in the local community and growing every year.
         </p>
@@ -258,7 +258,7 @@ export default function AboutPage() {
       {/* Karate Blend */}
       <div className="bg-[#FAFAFA] p-6 rounded-xl shadow hover:shadow-lg transition"data-aos="fade-up"data-aos-duration="900" data-aos-delay="200">
         <h3 className="text-xl font-semibold mb-2">Traditional & Sports Karate</h3>
-        <p className="text-gray-600">
+        <p className="text-gray-600 font-crimson text-lg">
           Our training includes both classical Okinawan styles and modern competitive sports karate, 
           providing a balanced and authentic martial arts experience.
         </p>
@@ -267,7 +267,7 @@ export default function AboutPage() {
       {/* Rifle Range */}
       <div className="bg-[#FAFAFA] p-6 rounded-xl shadow hover:shadow-lg transition"data-aos="fade-up"data-aos-duration="900" data-aos-delay="300">
         <h3 className="text-xl font-semibold mb-2">Professional Rifle Shooting Range</h3>
-        <p className="text-gray-600">
+        <p className="text-gray-600 font-crimson text-lg">
           Equipped with a fully professional air rifle shooting range, our students receive structured, 
           safety-first training in marksmanship and focus.
         </p>
@@ -276,7 +276,7 @@ export default function AboutPage() {
       {/* Kickboxing National Reach */}
       <div className="bg-[#FAFAFA] p-6 rounded-xl shadow hover:shadow-lg transition"data-aos="fade-up"data-aos-duration="900" data-aos-delay="400">
         <h3 className="text-xl font-semibold mb-2">National Kickboxing Presence</h3>
-        <p className="text-gray-600">
+        <p className="text-gray-600 font-crimson text-lg">
           Our kickboxing athletes compete and win at the national level, representing 
           Black Pantherkan with pride, power, and professionalism.
         </p>
@@ -290,7 +290,7 @@ export default function AboutPage() {
 <section className=" py-8 px-4">
   <div className="max-w-4xl mx-auto text-center mb-6">
     <h2 className="text-3xl font-merich text-gray-800 mb-2">Annual Events</h2>
-    <p className="text-base text-gray-600">
+    <p className="text-lg text-gray-600 font-crimson">
       Black Pantherkan hosts impactful events that shape discipline and excellence.
     </p>
   </div>
@@ -307,7 +307,7 @@ export default function AboutPage() {
       </div>
       <div className="p-4 text-left">
         <h3 className="text-lg font-semibold text-gray-800 mb-1">Training & Grading Camp</h3>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-sm text-gray-600 mb-3 font-crimson">
           Annual promotion event with focused training and belt exams under certified instructors.
         </p>
         <a
@@ -330,7 +330,7 @@ export default function AboutPage() {
       </div>
       <div className="p-4 text-left">
         <h3 className="text-lg font-semibold text-gray-800 mb-1">National Pantherkan Cup</h3>
-        <p className="text-sm text-gray-600 mb-3">
+        <p className="text-sm text-gray-600 mb-3 font-crimson">
           Prestigious national karate championship hosted annually with competitors from across India.
         </p>
         <a

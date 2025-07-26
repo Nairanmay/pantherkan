@@ -280,14 +280,14 @@ export default function CompetitionGalleryPage() {
                 </div>
                 <div className="p-4">
                   <h3
-                    className={`text-base sm:text-lg font-semibold text-gray-800 ${
+                    className={` font-silkscreen text-base font-bold sm:text-lg  text-gray-800 ${
                       showAnimations ? 'slide-in-text slide-in-delay-1' : ''
                     }`}
                   >
                     {comp.title}
                   </h3>
                   <p
-                    className={`text-sm text-gray-600 mt-1 ${
+                    className={`font-silkscreen text-sm text-gray-600 mt-1 ${
                       showAnimations ? 'slide-in-text slide-in-delay-2' : ''
                     }`}
                   >

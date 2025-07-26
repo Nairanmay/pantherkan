@@ -57,7 +57,7 @@ export default function ProgramsSection() {
     <section id="programs" className="py-20 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="font-merich text-4xl  text-center text-gray-800 mb-4">Choose <em className="text-red-500 not-italic">Program</em></h2>
-        <p className="text-center text-gray-600 mb-12">
+        <p className="font-aleo text-center text-gray-600 mb-12c pb-12">
           Click on a program to learn more.
         </p>
 
