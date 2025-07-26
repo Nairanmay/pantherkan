@@ -34,10 +34,18 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2">
-          <Image src="/logo3.png" alt="Logo" height={52} width={52} className='bg-transparent'/>
-          <span className="text-xl sm:text-2xl font-shocksurgent font-bold">BLACKPANTHERKAN</span>
-        </Link>
+       <Link href="/" className="flex items-center space-x-1 sm:space-x-2">
+  <Image
+    src="/logo3.png"
+    alt="Logo"
+    height={40}
+    width={40}
+    className="bg-transparent sm:h-[52px] sm:w-[52px]"
+  />
+  <span className="text-lg sm:text-2xl font-shocksurgent font-bold whitespace-nowrap tracking-wide">
+    BLACKPANTHERKAN
+  </span>
+</Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-6 font-medium">
