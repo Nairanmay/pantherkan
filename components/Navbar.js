@@ -100,16 +100,16 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="absolute top-[64px] left-0 w-full z-50 bg-black/40 backdrop-blur-md text-white px-4 py-4 space-y-2 rounded-b-xl shadow-lg ring-1 ring-white/20 text-base">
-          <Link href="./#home" className="block py-2 px-2 rounded hover:bg-white/10 hover:text-red-400 transition" onClick={handleNavClick}>
+          <Link href="./#home" className=" font-bebas block py-2 px-2 rounded hover:bg-white/10 hover:text-red-400 transition" onClick={handleNavClick}>
             Home
           </Link>
 
           {/* About Dropdown (unstyled) */}
           <details>
-            <summary className="cursor-pointer py-2 px-2 rounded hover:bg-white/10 hover:text-red-400 transition font-medium">
+            <summary className=" font-bebas cursor-pointer py-2 px-2 rounded hover:bg-white/10 hover:text-red-400 transition font-medium">
               About
             </summary>
-            <div className="ml-4 mt-1 space-y-1 text-sm">
+            <div className="ml-4 mt-1 space-y-1 text-sm font-bebas">
               <Link href="./#programs" className="block hover:text-red-400" onClick={handleNavClick}>Our Programs</Link>
               <Link href="./commitee#commitee" className="block hover:text-red-400" onClick={handleNavClick}>Committee</Link>
               <Link href="./commitee#comission" className="block hover:text-red-400" onClick={handleNavClick}>Commission</Link>
@@ -117,20 +117,20 @@ export default function Navbar() {
             </div>
           </details>
 
-          <Link href="./#classes" className="block py-2 px-2 rounded hover:bg-white/10 hover:text-red-400 transition" onClick={handleNavClick}>
+          <Link href="./#classes" className=" font-bebas block py-2 px-2 rounded hover:bg-white/10 hover:text-red-400 transition" onClick={handleNavClick}>
             Classes
           </Link>
 
-          <Link href="./contacts" className="block py-2 px-2 rounded hover:bg-white/10 hover:text-red-400 transition" onClick={handleNavClick}>
+          <Link href="./contacts" className=" font-bebas block py-2 px-2 rounded hover:bg-white/10 hover:text-red-400 transition" onClick={handleNavClick}>
             Contact
           </Link>
 
           {/* Gallery Dropdown */}
           <details>
-            <summary className="cursor-pointer py-2 px-2 hover:bg-white/10 hover:text-red-400 transition font-medium">
+            <summary className=" font-bebas cursor-pointer py-2 px-2 hover:bg-white/10 hover:text-red-400 transition font-medium">
               Gallery
             </summary>
-            <div className="ml-4 mt-1 space-y-1 text-sm">
+            <div className="ml-4 mt-1 space-y-1 text-sm font-bebas">
               <Link href="/camp" className="block hover:text-red-400" onClick={handleNavClick}>Camp</Link>
               <Link href="/competition" className="block hover:text-red-400" onClick={handleNavClick}>Competition</Link>
               <Link href="/refree_seminar" className="block hover:text-red-400" onClick={handleNavClick}>Referee Seminar</Link>
@@ -144,7 +144,7 @@ export default function Navbar() {
 
           <Link
             href="https://forms.gle/JtqbJdUEiet6JNmP7"
-            className="block mt-3 text-center bg-red-600 text-white py-2 rounded hover:bg-red-700 transition shadow-md"
+            className=" font-bebas block mt-3 text-center bg-red-600 text-white py-2 rounded hover:bg-red-700 transition shadow-md"
             onClick={handleNavClick}
           >
             Register Now
