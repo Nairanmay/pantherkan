@@ -75,6 +75,7 @@ export default function Navbar() {
               <Link href="./selfdefence_seminar" className="block px-4 py-2 hover:bg-gray-100">Self Defence Seminar</Link>
             </div>
           </div>
+          <Link href="./FAQ" className="hover:text-gray-500 font-bebas text-xl">FAQ</Link>
 
           {/* <Link href="./athlete" className="hover:text-gray-500">Athlete</Link> */}
 
@@ -137,7 +138,9 @@ export default function Navbar() {
               <Link href="/selfdefence_seminar" className="block hover:text-red-400" onClick={handleNavClick}>Self Defence Seminar</Link>
             </div>
           </details>
-
+           <Link href="./FAQ" className=" font-bebas block py-2 px-2 rounded hover:bg-white/10 hover:text-red-400 transition" onClick={handleNavClick}>
+            FAQ
+          </Link>
           {/* <Link href="./athlete" className="block py-2 px-2 rounded hover:bg-white/10 hover:text-red-400 transition" onClick={handleNavClick}>
             Athlete
           </Link> */}
