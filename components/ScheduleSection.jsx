@@ -165,7 +165,7 @@ function ScheduleTable({ programTitle, scheduleData }) {
     <section className="py-16 border-gray-200" id={`${programTitle.toLowerCase()}-schedule`}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-gray-800 uppercase">
+          <h2 className="text-3xl font-merich text-gray-800 uppercase">
             {programTitle} <span className="text-red-600">Schedule</span>
           </h2>
           <p className="text-gray-600 mt-2">Filter schedule by day using the buttons below.</p>
@@ -236,7 +236,7 @@ export default function SchedulePage() {
   return (
     <div className="">
       <header className="py-20 text-center  border-gray-200 px-4">
-        <h1 className="text-5xl font-bold text-gray-800">
+        <h1 className="text-5xl font-merich text-gray-800">
           Classes <span className="text-red-600">Schedule</span>
         </h1>
         <p className="mt-4 max-w-xl mx-auto text-gray-600 text-lg">

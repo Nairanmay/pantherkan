@@ -181,3 +181,96 @@ root {
     padding: 0;
   }
 }
+@font-face {
+  font-family: 'Higher Jump';
+  src: url('/fonts/Higher Jump.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('/fonts/BebasNeue-Regular.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Heathergreen';
+  src: url('/fonts/Heathergreen.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Made Tommy';
+  src: url('/fonts/MADE TOMMY Black_PERSONAL USE.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Merich';
+  src: url('/fonts/Merich.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Milker';
+  src: url('/fonts/Milker.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NCL Neovibes';
+  src: url('/fonts/NCLNeovibes-Demo.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rush Driver';
+  src: url('/fonts/RushDriver-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Shock Surgent';
+  src: url('/fonts/Shock Surgent.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-higherjump {
+  font-family: 'Higher Jump', sans-serif;
+}
+
+.font-bebas {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.font-heathergreen {
+  font-family: 'Heathergreen', serif;
+}
+
+.font-madetommy {
+  font-family: 'Made Tommy', sans-serif;
+}
+
+.font-merich {
+  font-family: 'Merich', serif;
+}
+
+.font-milker {
+  font-family: 'Milker', sans-serif;
+}
+
+.font-nclneovibes {
+  font-family: 'NCL Neovibes', cursive;
+}
+
+.font-rushdriver {
+  font-family: 'Rush Driver', cursive;
+}
+
+.font-shocksurgent {
+  font-family: 'Shock Surgent', sans-serif;
+}

@@ -19,7 +19,7 @@ export default function ProgramCard({ program, onClick }) {
         />
       </div>
       <div className="p-4 text-center">
-        <h3 className="text-xl font-semibold text-gray-800">{program.title}</h3>
+        <h3 className=" font-bebas text-2xl font-extrabold text-gray-800">{program.title}</h3>
       </div>
     </div>
   );

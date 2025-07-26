@@ -36,32 +36,32 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
           <Image src="/logo3.png" alt="Logo" height={52} width={52} className='bg-transparent'/>
-          <span className="text-xl sm:text-2xl font-abolition font-bold">BLACKPANTHERKAN</span>
+          <span className="text-xl sm:text-2xl font-shocksurgent font-bold">BLACKPANTHERKAN</span>
         </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-6 font-medium">
-          <Link href="./#home" className="hover:text-gray-500">Home</Link>
+          <Link href="./#home" className="hover:text-gray-500 font-bebas text-xl ">Home</Link>
 
           {/* About Dropdown */}
-          <div className="relative group">
-            <button className="hover:text-gray-500">About</button>
+          <div className="relative group ">
+            <button className="hover:text-gray-500 font-bebas text-xl ">About</button>
             <div className="absolute left-0 mt-2 w-52 bg-white text-black shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible invisible transition duration-300 z-10">
-              <Link href="./#programs" className="block px-4 py-2 hover:bg-gray-100">Our Programs</Link>
-              <Link href="./commitee#commitee" className="block px-4 py-2 hover:bg-gray-100">Committee</Link>
-              <Link href="./commitee#comission" className="block px-4 py-2 hover:bg-gray-100">Commission</Link>
-              <Link href="./our_organisation" className="block px-4 py-2 hover:bg-gray-100">Our Organization</Link>
+              <Link href="./#programs" className="block px-4 py-2 hover:bg-gray-100 font-bebas text-xl">Our Programs</Link>
+              <Link href="./commitee#commitee" className="block px-4 py-2 hover:bg-gray-100 font-bebas text-xl">Committee</Link>
+              <Link href="./commitee#comission" className="block px-4 py-2 hover:bg-gray-100 font-bebas text-xl">Commission</Link>
+              <Link href="./our_organisation" className="block px-4 py-2 hover:bg-gray-100 font-bebas text-xl">Our Organization</Link>
             </div>
           </div>
 
-          <Link href="./#classes" className="hover:text-gray-500">Classes</Link>
-          <Link href="./contacts" className="hover:text-gray-500">Contact</Link>
+          <Link href="./#classes" className="hover:text-gray-500 font-bebas text-xl">Classes</Link>
+          <Link href="./contacts" className="hover:text-gray-500 font-bebas text-xl">Contact</Link>
 
           {/* Gallery Dropdown */}
           <div className="relative group">
-            <button className="hover:text-gray-500">Gallery</button>
-            <div className="absolute left-0 mt-2 w-60 bg-white text-black shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible invisible transition duration-300 z-10">
-              <Link href="./camp" className="block px-4 py-2 hover:bg-gray-100">Camp</Link>
+            <button className="hover:text-gray-500 font-bebas text-xl">Gallery</button>
+            <div className=" font-bebas text-xl absolute left-0 mt-2 w-60 bg-white text-black shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible invisible transition duration-300 z-10">
+              <Link href="./camp" className="block px-4 py-2 hover:bg-gray-100 ">Camp</Link>
               <Link href="./competition" className="block px-4 py-2 hover:bg-gray-100">Competition</Link>
               <Link href="./refree_seminar" className="block px-4 py-2 hover:bg-gray-100">Referee Seminar</Link>
               <Link href="./selfdefence_seminar" className="block px-4 py-2 hover:bg-gray-100">Self Defence Seminar</Link>
@@ -73,7 +73,7 @@ export default function Navbar() {
           {/* Register Button */}
           <Link
             href="https://forms.gle/JtqbJdUEiet6JNmP7"
-            className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition"
+            className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition font-bebas text-xl"
           >
             Register Now
           </Link>

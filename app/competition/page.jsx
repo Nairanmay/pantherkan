@@ -152,7 +152,7 @@ export default function CompetitionGalleryPage() {
       {!selectedComp ? (
         <>
           <section className="w-full h-[200px] bg-[#807E7E] pt-24 pb-6 rounded-lg">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-merich text-center text-gray-800">
               Competition<span className="text-red-600"> Gallery</span>
             </h1>
           </section>
@@ -213,7 +213,7 @@ export default function CompetitionGalleryPage() {
 
           {/* Selected Competition Gallery */}
           <section className="w-full h-[200px] bg-[#807E7E] pt-24 pb-6 rounded-xl" >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-merich text-center text-gray-800">
             {selectedComp.title} ({selectedComp.year})
           </h2>
           </section>

@@ -21,7 +21,7 @@ export default function AboutPage() {
           inView ? 'opacity-100 scale-100' : 'opacity-0 scale-90'
         }`}
       >
-        <h1 className="text-4xl font-bold mb-4" data-aos="fade-down"data-aos-duration="900"  // optional: duration in ms
+        <h1 className=" font-merich text-4xl  mb-4" data-aos="fade-down"data-aos-duration="900"  // optional: duration in ms
              data-aos-delay="1000">About Black Pantherkan</h1>
         <p className="text-lg leading-relaxed" data-aos="fade-down"data-aos-duration="900"  // optional: duration in ms
              data-aos-delay="1000">
@@ -37,7 +37,7 @@ export default function AboutPage() {
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div  data-aos="zoom-in-right"data-aos-duration="900"  // optional: duration in ms
              data-aos-delay="700">
-            <h2 className="text-2xl font-bold mb-4">Our Legacy</h2>
+            <h2 className="text-2xl  mb-4 font-merich">Our Legacy</h2>
             <p className="text-gray-700 text-lg leading-relaxed">
               Since our establishment in 2015, Black Pantherkan has grown into one of the most recognized sports 
               and martial arts organizations in the region. With over 20 active training centers across Maharashtra, 
@@ -73,7 +73,7 @@ export default function AboutPage() {
     </div>
     {/* Founder Text */}
     <div data-aos="zoom-in-left"data-aos-duration="900">
-      <h2 className="text-3xl font-bold mb-4 typing-effect">Our Founder</h2>
+      <h2 className="text-3xl font-merich mb-4 typing-effect">Our Founder</h2>
       <h3 className="text-xl font-semibold text-gray-800 mb-2">Grandmaster Dr. Biju Nair</h3>
       <p className="text-gray-700 text-lg leading-relaxed mb-4">
         Grandmaster Dr. Biju Nair is an Indian martial artist and the visionary founder of the Black Pantherkan Association of Sports and Martial Arts. 
@@ -100,7 +100,7 @@ export default function AboutPage() {
       {/* Divisions Section with Images */}
 <section className="bg-[#F1F1F1]-100 py-16 px-6">
   <div className="max-w-6xl mx-auto">
-    <h2 className="text-3xl font-bold text-center mb-10">Our Divisions</h2>
+    <h2 className="text-3xl font-merich text-center mb-10">Our Divisions</h2>
     <div className="grid md:grid-cols-3 gap-8 text-center">
       
       {/* Karate Division */}
@@ -150,7 +150,7 @@ export default function AboutPage() {
       {/* Team & Expertise Section */}
      <section className="py-16 px-6  border-t border-gray-200">
   <div className="max-w-6xl mx-auto text-center">
-    <h2 className="text-3xl font-bold mb-6">Our Team & Expertise</h2>
+    <h2 className="text-3xl font-merich mb-6">Our Team & Expertise</h2>
     <p className="text-lg text-gray-700 max-w-4xl mx-auto mb-8">
       Black Pantherkan is powered by a team of highly qualified instructors with decades of combined experience 
       in martial arts and sports coaching. Our faculty includes certified national-level trainers, and a strong panel of 
@@ -227,7 +227,7 @@ export default function AboutPage() {
   {/* Content */}
   <div className="relative z-20 text-center px-6 py-20 max-w-4xl mx-auto"data-aos="fade-in"data-aos-duration="900"  // optional: duration in ms
              data-aos-delay="500">
-    <h2 className="text-3xl font-bold mb-4">Our Presence</h2>
+    <h2 className="text-3xl font-merich mb-4">Our Presence</h2>
     <p className="text-lg">
       We are proud to have a strong presence across India, especially in the Maharashtra region
       with over 20 active martial arts and sports classes. Black Pantherkan is not just an academy—it’s
@@ -238,7 +238,7 @@ export default function AboutPage() {
       {/* What Sets Us Apart Section */}
 <section className=" py-16 px-6">
   <div className="max-w-6xl mx-auto text-center">
-    <h2 className="text-3xl font-bold mb-6">What Sets Us Apart</h2>
+    <h2 className="text-3xl font-merich mb-6">What Sets Us Apart</h2>
     <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-12">
       Black Pantherkan is not just a martial arts academy — it's a complete ecosystem for sports and personal development, 
       combining tradition, professionalism, and regional excellence.
@@ -289,7 +289,7 @@ export default function AboutPage() {
 
 <section className=" py-8 px-4">
   <div className="max-w-4xl mx-auto text-center mb-6">
-    <h2 className="text-3xl font-bold text-gray-800 mb-2">Annual Events</h2>
+    <h2 className="text-3xl font-merich text-gray-800 mb-2">Annual Events</h2>
     <p className="text-base text-gray-600">
       Black Pantherkan hosts impactful events that shape discipline and excellence.
     </p>

@@ -132,7 +132,7 @@ export default function CampGalleryPage() {
       {!selectedCamp ? (
         <>
         <section className="w-full h-[200px] bg-[#807E7E] pt-24 pb-6 rounded-lg">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-merich text-center text-gray-800">
               Camp<span className="text-red-600"> Gallery</span>
             </h1>
           </section>
@@ -193,7 +193,7 @@ export default function CampGalleryPage() {
 </div>
 
            <section className="w-full h-[200px] bg-[#807E7E] pt-24 pb-2 rounded-xl" >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-merich text-center text-gray-800">
             {selectedCamp.title} ({selectedCamp.year})
           </h2>
           </section>

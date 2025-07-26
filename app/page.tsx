@@ -60,7 +60,7 @@ useEffect(() => {
       />
     ))}
     {/* Optional: dark overlay */}
-    {/* <div className="absolute inset-0 bg-black/40" /> */}
+    <div className="absolute inset-0 bg-black/20" />
   </div>
 
   {/* Foreground Content */}
@@ -70,10 +70,13 @@ useEffect(() => {
   data-aos-duration="1000"
   data-aos-delay="1000"
 >
-  <h1 className="text-2xl sm:text-4xl md:text-6xl font-extrabold mb-4  leading-snug">
+<h1
+  className="font-milker text-2xl sm:text-4xl md:text-6xl font-bold mb-4 leading-snug"
+  style={{ color: '#fdfffc' }}
+>
     Work Harder, <br className="sm:hidden" /> Get Stronger
   </h1>
-  <p className="text-sm sm:text-lg md:text-xl mb-6 leading-relaxed">
+  <p className=" font-milker text-sm sm:text-lg md:text-xl mb-6 leading-relaxed">
     Easy with our Team
   </p>
   <Link
@@ -107,7 +110,7 @@ useEffect(() => {
     {/* Social Section */}
       <section id="social" className="bg-gray-900 py-16 text-center">
   <div className="max-w-3xl mx-auto px-4">
-    <h2 className="text-4xl font-extrabold text-white mb-4 tracking-wide">
+    <h2 className=" font-merich text-4xl font-extrabold text-white mb-4 tracking-wide">
       Don’t Think, Begin Today!
     </h2>
     <p className="text-lg text-gray-300 mb-8">
@@ -157,7 +160,7 @@ useEffect(() => {
 
 <section id="classes" className="py-20 ">
   <div className="max-w-7xl mx-auto px-4">
-    <h2 className="text-4xl font-bold text-center text-gray-800 mb-4">
+    <h2 className=" font-merich text-4xl  text-center text-gray-800 mb-4">
       Our <em className="text-red-500 not-italic">Classes</em>
     </h2>
     <p className="text-center text-gray-600 mb-12">
@@ -201,7 +204,7 @@ useEffect(() => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition" />
           </div>
           <div className="p-6 text-center">
-            <h3 className="text-xl font-semibold text-gray-800 group-hover:text-red-600 mb-2 transition">
+            <h3 className=" font-bebas text-2xl font-semibold text-gray-800 group-hover:text-red-600 mb-2 transition">
               {cls.title}
             </h3>
             <p className="text-gray-600 mb-4">{cls.desc}</p>
@@ -227,7 +230,7 @@ useEffect(() => {
       <section id="trainers" className="py-16 ">
       <div className="container mx-auto px-4">
        <div className="max-w-4xl mx-auto text-center mb-10">
-  <h2 className="text-4xl font-bold text-gray-800 uppercase tracking-wider relative inline-block font-roboto">
+  <h2 className=" font-merich text-4xl  text-gray-800 uppercase tracking-wider relative inline-block ">
     FOUNDER
     <span className="block w-20 h-1 bg-indigo-600 mx-auto mt-2 rounded"></span>
   </h2>

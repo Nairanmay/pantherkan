@@ -59,7 +59,7 @@ export default function ContactPage() {
       <section className="py-14 sm:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-800">
+            <h2 className="text-3xl sm:text-4xl font-merich text-gray-800">
               Get in <span className="text-red-600">Touch</span>
             </h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto text-sm sm:text-base">
@@ -113,7 +113,7 @@ export default function ContactPage() {
             {/* Info */}
             <div className="space-y-6 text-gray-700 text-sm sm:text-base">
               <div>
-                <h3 className="text-2xl font-bold mb-2">Black Pantherkan Academy</h3>
+                <h3 className="text-2xl font-merich mb-2">Black Pantherkan Academy</h3>
                 <p className="text-gray-600">Reach out to us at our headquarters or use the form.</p>
               </div>
               <div className="space-y-2">

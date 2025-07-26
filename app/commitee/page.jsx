@@ -85,7 +85,7 @@ export default function CommitteePage() {
   >
     <div className="absolute inset-0 bg-black/45 z-0" />
     <div className="relative z-10 text-center max-w-3xl mx-auto px-4">
-      <h2 className="text-4xl md:text-5xl font-bold text-white pt-8 pb-8">
+      <h2 className=" font-merich text-4xl md:text-5xl  text-white pt-8 pb-8">
         Our <span className="text-[red]">Committee</span>
       </h2>
       <p className="mt-4 text-lg text-gray-200">
@@ -167,8 +167,8 @@ export default function CommitteePage() {
   >
     <div className="absolute inset-0 bg-black/45 z-0" />
     <div className="relative z-10 text-center max-w-3xl mx-auto px-4">
-      <h2 className="text-4xl md:text-5xl font-bold text-white pt-6 pb-6">
-        Our <span className="text-[red]">Commission</span> Members
+      <h2 className="text-4xl md:text-5xl  text-white pt-6 pb-6 font-merich">
+        Our <span className="text-[red] ">Commission</span> Members
       </h2>
       <p className="mt-4 text-lg text-gray-200">
         A team of professionals supporting excellence in every domain.
