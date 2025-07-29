@@ -13,7 +13,7 @@ const faqs = [
   {
     question: "What is Black PantherKan Academy?",
     answer:
-      "Black PantherKan Academy of Sports & Martial Arts is a leading training center focusing on martial arts,Kick-Boxing, Rifle-Shooting, self-defense, and fitness programs for all age groups.",
+      "Black PantherKan Academy of Sports & Martial Arts is a leading training center focusing on martial arts, Kick-Boxing, Rifle-Shooting, self-defense, and fitness programs for all age groups.",
   },
   {
     question: "What programs do you offer?",
@@ -23,7 +23,7 @@ const faqs = [
   {
     question: "How can I enroll in a class?",
     answer:
-      "You can enroll by visiting our Registation from and filling the form, or call us directly at +91-9970616339.",
+      "You can enroll by visiting our Registation form and filling the form, or call us directly at +91-9970616339.",
   },
   {
     question: "Do you provide trial classes?",
@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "Where are you located?",
     answer:
-      "We are located in Vasai & Naigoan, and our full address is listed on the Contact page.",
+      "We are located in Vasai & Naigoan, and our full address is listed on the Schedule page via Classes section.",
   },
   {
     question: "What age is required and what is the age limit?",

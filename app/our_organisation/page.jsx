@@ -26,7 +26,7 @@ export default function AboutPage() {
         <p className=" font-crimson text-xl leading-relaxed" data-aos="fade-down"data-aos-duration="900"  // optional: duration in ms
              data-aos-delay="1000">
           Black Pantherkan is a premier sports and martial arts academy founded in 2015 by Dr. Biju Nair.
-          We are dedicated to promoting physical excellence, discipline, and sportsmanship across Maharashtra.
+          We are dedicated to promoting physical excellence, discipline, and sportsmanship across India.
         </p>
       </div>
     </section>
@@ -40,7 +40,7 @@ export default function AboutPage() {
             <h2 className="text-3xl  mb-4 font-merich">Our Legacy</h2>
             <p className="text-gray-700 text-xl leading-relaxed font-crimson">
               Since our establishment in 2015, Black Pantherkan has grown into one of the most recognized sports 
-              and martial arts organizations in the region. With over 20 active training centers across Maharashtra, 
+              and martial arts organizations in the region. With active training centers across Maharashtra, 
               we have nurtured thousands of athletes, instilling in them the values of discipline, resilience, and respect.
             </p>
           </div >
@@ -170,7 +170,7 @@ export default function AboutPage() {
     />
     <h4 className="text-lg font-semibold text-gray-800">Karate India Organization (KIO)</h4>
     <p className="text-base text-gray-600 font-crimson">
-      Official national governing body for Karate in India, recognized by the Indian Olympic Association.
+      Official national governing body for Karate in India, recognized by the World Karate Federation (WKF).
     </p>
   </div>
 
@@ -230,7 +230,7 @@ export default function AboutPage() {
     <h2 className="text-4xl font-merich mb-4">Our Presence</h2>
     <p className="text-2xl font-crimson">
       We are proud to have a strong presence across India, especially in the Maharashtra region
-      with over 20 active martial arts and sports classes. Black Pantherkan is not just an academy—it’s
+      with active martial arts and sports classes. Black Pantherkan is not just an academy—it’s
       a movement empowering the next generation of champions.
     </p>
   </div>
@@ -250,7 +250,7 @@ export default function AboutPage() {
       <div className="bg-[#FAFAFA] p-6 rounded-xl shadow hover:shadow-lg transition"data-aos="fade-up"data-aos-duration="900" data-aos-delay="100">
         <h3 className="text-xl font-semibold mb-2">Strong Regional Presence</h3>
         <p className="text-gray-600 font-crimson text-lg">
-          With over 20 training centers across Maharashtra and widespread influence in Maharashtra, 
+          With training centers across Maharashtra and widespread influence in Maharashtra, 
           we are deeply rooted in the local community and growing every year.
         </p>
       </div>
@@ -259,7 +259,7 @@ export default function AboutPage() {
       <div className="bg-[#FAFAFA] p-6 rounded-xl shadow hover:shadow-lg transition"data-aos="fade-up"data-aos-duration="900" data-aos-delay="200">
         <h3 className="text-xl font-semibold mb-2">Traditional & Sports Karate</h3>
         <p className="text-gray-600 font-crimson text-lg">
-          Our training includes both classical Okinawan styles and modern competitive sports karate, 
+          Our training includes both Traditional and modern competitive sports karate, 
           providing a balanced and authentic martial arts experience.
         </p>
       </div>
