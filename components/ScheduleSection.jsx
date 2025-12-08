@@ -12,7 +12,7 @@ const scheduleDataA = [
     },
     {
       location: 'B.K.S English School, Manikpur, Vasai (W)',
-      days: { monday: '7:00PM - 8:30PAM', wednesday: '7:00PM - 8:30PM' },
+      days: { monday: '7:00PM - 8:30PM', wednesday: '7:00PM - 8:30PM' },
       instructor: 'Senpei Alphonse Thomas',
     },
     {
@@ -22,7 +22,7 @@ const scheduleDataA = [
     },
     {
       location: 'St. Xaviers English School, Manikpur, Vasai (W)',
-      days: { monday: '5:00PM - 6:30AM', wednesday: '5:00PM - 6:30AM' },
+      days: { monday: '5:00PM - 6:30PM', wednesday: '5:00PM - 6:30PM' },
       instructor: 'GM. Dr. Biju Nair',
     },
     {
@@ -37,7 +37,7 @@ const scheduleDataA = [
     },
     {
       location: 'Shankar Mandir Compound, Umelman, Vasai (W)',
-      days: { saturday: '5:00PM - 6:30PM', sunday: '5:30PM - 7:00PM' },
+      days: { saturday: '5:00PM - 6:30PM', sunday: '5:00PM - 6:30PM' },
       instructor: 'Sensei Arjun Tharu',
     },
     {
@@ -67,13 +67,26 @@ const scheduleDataA = [
       Senpei Mithilesh Vishwakarma / <br />
       Senpei Bhavik Avaghade</>
  },
-
+{
+      location: 'Thakur Indrasandevi Public School, Yashwant Smart City, Madhuban Township, Vasai (E)',
+      days: { saturday: '6:00PM - 7:30PM', sunday: '6:00PM - 7:30PM' },
+      instructor:<>
+      Senpei Alphonse Thomas / <br />
+      Senpei Shaswat Yadav</>
+ },
+  {
+      location: 'Divine Santo Nino InterNational School, Neminath Nagar, Achole Cross Road, Nallasopara (E)',
+      days: { tuesday: '6:00PM - 7:30PM', thursday: '6:00PM - 7:30PM' },
+      instructor:<>
+      Sensei Namrata Nair / <br />
+      Senpei Tanmay Nair</>
+ },
 ];
 
 const scheduleDataB = [
   {
       location: 'BKS school, Manikpur, Vasai (W)',
-      days: { monday: '7:00PM - 8:30PM',  wednesday: '7:00AM - 8:30AM' },
+      days: { monday: '7:00PM - 8:30PM',  wednesday: '7:00PM - 8:30PM' },
       instructor: 'Dr.Biju Nair',
  },
   {
@@ -106,7 +119,7 @@ const scheduleDataC = [
     },
     {
       location: 'St. Xaviers English School, Manikpur, Vasai (W)',
-      days: { monday: '5:00PM - 6:30AM', wednesday: '5:00PM - 6:30AM' },
+      days: { monday: '5:00PM - 6:30PM', wednesday: '5:00PM - 6:30PM' },
       instructor: 'GM. Dr. Biju Nair',
     },
     {
@@ -151,7 +164,20 @@ const scheduleDataC = [
       Senpei Mithilesh Vishwakarma / <br />
       Senpei Bhavik Avaghade</>
  },
-
+{
+      location: 'Thakur Indrasandevi Public School, Yashwant Smart City, Madhuban Township, Vasai (E)',
+      days: { saturday: '5:00PM - 6:30PM', sunday: '5:00PM - 6:30PM' },
+      instructor:<>
+      Senpei Alphonse Thomas / <br />
+      Senpei Shaswat Yadav</>
+ },
+ {
+      location: 'Divine Santo Nino InterNational School, Neminath Nagar, Achole Cross Road, Nallasopara (E)',
+      days: { tuesday: '7:00PM - 8:30PM', thursday: '7:00PM - 8:30PM' },
+      instructor:<>
+      Sensei Namrata Nair / <br />
+      Senpei Tanmay Nair</>
+ },
 ];
 
 function ScheduleTable({ programTitle, scheduleData }) {
